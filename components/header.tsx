@@ -23,7 +23,7 @@ const Header = () => {
 							<span className="px-2 uppercase font-[20px]">Contact</span>
 						</Link>
 						<span className="mx-2 text-2xl -mt-1">|</span>
-						<div className="flex" id="socials">
+						<div className="fle" id="socials">
 							<Link href="/linkedin" className="border border-black hover:border-[#0072b1] group rounded-full h-7 w-7 p-1 flex items-center justify-center mx-2 text-center">
 								<svg className="w-full" width="14" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
