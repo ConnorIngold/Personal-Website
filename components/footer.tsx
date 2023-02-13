@@ -18,7 +18,7 @@ const Footer = () => {
 						<span className="px-4">Contact</span>
 					</Link>
 				</nav>
-				<p className="text-white text-center mt-4">&copy; {new Date().getFullYear()} My Portfolio</p>
+				<p className="text-center mt-4">&copy; {new Date().getFullYear()} My Portfolio</p>
 			</div>
 		</footer>
 	)

@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 const Header = () => {
+	const [animationParent] = useAutoAnimate()
+
 	return (
 		<header className="">
 			<div className="container mx-auto">
@@ -9,7 +12,10 @@ const Header = () => {
 						<span className="font-bold text-[32px] font-Syne">Connor Ingold</span>
 					</Link>
 
-					<nav className="flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full">
+					<nav
+						ref={animationParent}
+						className="flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full"
+					>
 						<Link href="/about">
 							<span className="px-2 uppercase font-[20px]">About Me</span>
 						</Link>
@@ -23,7 +29,7 @@ const Header = () => {
 							<span className="px-2 uppercase font-[20px]">Contact</span>
 						</Link>
 						<span className="mx-2 text-2xl -mt-1">|</span>
-						<div className="fle" id="socials">
+						<div className="flex" id="socials">
 							<Link href="/linkedin" className="border border-black hover:border-[#0072b1] group rounded-full h-7 w-7 p-1 flex items-center justify-center mx-2 text-center">
 								<svg className="w-full" width="14" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
