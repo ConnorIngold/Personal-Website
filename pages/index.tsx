@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 		<Layout>
 			<main className="container">
 				<section className="text-center my-7 lg:my-14">
-					<h1 className="text-black text-title">Welcome to my portfolio!</h1>
+					<h1 className="mb-5 text-black text-title">Welcome to my portfolio!</h1>
 					<p>
 						I&apos;m a remote web developer based in London and Northampton <br /> with over 4 years of experience.{' '}
 					</p>

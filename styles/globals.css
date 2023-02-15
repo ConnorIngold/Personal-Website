@@ -77,6 +77,15 @@ p{
   line-height: 150%;
 }
 
+nav span{
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
 input, textarea, label{
   font-family: 'Roboto Mono';
   font-style: normal;
