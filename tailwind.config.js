@@ -18,6 +18,9 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
+    borderColor: {
+      default: '#1A1918',
+    },
     fontSize: {
       'title': ['6rem', {
         "font-family": "Syne",
@@ -32,7 +35,11 @@ module.exports = {
         fontWeight: '700',
       }],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'black': '#1A1918',
+      },
+    },
   },
   plugins: [],
 }

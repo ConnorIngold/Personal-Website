@@ -1,34 +1,28 @@
 import Link from 'next/link'
-import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 const Header = () => {
-	const [animationParent] = useAutoAnimate()
-
 	return (
 		<header className="">
 			<div className="container mx-auto">
-				<div className="flex items-center justify-between border-b border-black py-3">
+				<div className="flex items-center justify-between py-3 border-b border-black">
 					<Link href="/">
 						<span className="font-bold text-[32px] font-Syne">Connor Ingold</span>
 					</Link>
 
-					<nav
-						ref={animationParent}
-						className="flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full"
-					>
+					<nav className="hidden lg:flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full">
 						<Link href="/about">
-							<span className="px-2 uppercase font-[20px]">About Me</span>
+							<span className="px-2 text-[64px] lg:text-[20px] uppercase">About Me</span>
 						</Link>
 						<Link href="/projects">
-							<span className="px-2 uppercase font-[20px]">Services</span>
+							<span className="px-2 text-[64px] lg:text-[20px] uppercase">Services</span>
 						</Link>
 						<Link href="/contact">
-							<span className="px-2 uppercase font-[20px]">My Projects</span>
+							<span className="px-2 text-[64px] lg:text-[20px] uppercase">My Projects</span>
 						</Link>
 						<Link href="/contact">
-							<span className="px-2 uppercase font-[20px]">Contact</span>
+							<span className="px-2 text-[64px] lg:text-[20px] uppercase">Contact</span>
 						</Link>
-						<span className="mx-2 text-2xl -mt-1">|</span>
+						<span className="mx-2 -mt-1 text-2xl">|</span>
 						<div className="flex" id="socials">
 							<Link href="/linkedin" className="border border-black hover:border-[#0072b1] group rounded-full h-7 w-7 p-1 flex items-center justify-center mx-2 text-center">
 								<svg className="w-full" width="14" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +42,7 @@ const Header = () => {
 									/>
 								</svg>
 							</Link>
-							<Link href="/youtube" className="border border-black h-7 w-7 p-1 rounded-full full flex items-center justify-center mx-2 text-xs">
+							<Link href="/youtube" className="flex items-center justify-center p-1 mx-2 text-xs border border-black rounded-full h-7 w-7 full">
 								<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										className="transition-colors duration-200 fill-current hover:fill-[#FF0000]"
@@ -57,7 +51,7 @@ const Header = () => {
 									/>
 								</svg>
 							</Link>
-							<Link href="/github" className="border border-black h-7 w-7 p-1 rounded-full full flex items-center justify-center mx-2 text-xs">
+							<Link href="/github" className="flex items-center justify-center p-1 mx-2 text-xs border border-black rounded-full h-7 w-7 full">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M9.99999 6.87579C8.27968 6.87579 6.87577 8.2797 6.87577 10C6.87577 11.7203 8.27968 13.1242 9.99999 13.1242C11.7203 13.1242 13.1242 11.7203 13.1242 10C13.1242 8.2797 11.7203 6.87579 9.99999 6.87579ZM19.3703 10C19.3703 8.70626 19.382 7.42423 19.3094 6.13283C19.2367 4.63283 18.8945 3.30158 17.7976 2.2047C16.6984 1.10548 15.3695 0.765639 13.8695 0.692982C12.5758 0.620326 11.2937 0.632045 10.0023 0.632045C8.70858 0.632045 7.42655 0.620326 6.13515 0.692982C4.63515 0.765639 3.3039 1.10783 2.20702 2.2047C1.1078 3.30392 0.767958 4.63283 0.695302 6.13283C0.622645 7.42658 0.634364 8.70861 0.634364 10C0.634364 11.2914 0.622645 12.5758 0.695302 13.8672C0.767958 15.3672 1.11015 16.6985 2.20702 17.7953C3.30624 18.8945 4.63515 19.2344 6.13515 19.307C7.4289 19.3797 8.71093 19.368 10.0023 19.368C11.2961 19.368 12.5781 19.3797 13.8695 19.307C15.3695 19.2344 16.7008 18.8922 17.7976 17.7953C18.8969 16.6961 19.2367 15.3672 19.3094 13.8672C19.3844 12.5758 19.3703 11.2938 19.3703 10ZM9.99999 14.807C7.33983 14.807 5.19296 12.6602 5.19296 10C5.19296 7.33986 7.33983 5.19298 9.99999 5.19298C12.6601 5.19298 14.807 7.33986 14.807 10C14.807 12.6602 12.6601 14.807 9.99999 14.807ZM15.0039 6.11876C14.3828 6.11876 13.8812 5.6172 13.8812 4.99611C13.8812 4.37501 14.3828 3.87345 15.0039 3.87345C15.625 3.87345 16.1266 4.37501 16.1266 4.99611C16.1267 5.14359 16.0978 5.28966 16.0415 5.42595C15.9851 5.56224 15.9024 5.68607 15.7981 5.79036C15.6939 5.89464 15.57 5.97733 15.4337 6.03368C15.2974 6.09004 15.1514 6.11895 15.0039 6.11876Z"

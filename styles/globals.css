@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@font-face {
+  font-family: 'Syne';
+  src: url('../public/fonts/Syne/static/Syne-SemiBold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -15,19 +34,51 @@ body{
   Typography
 */
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
   font-family: 'Syne', sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 h1{
-  font-style: normal;
-  font-weight: 500;
   font-size: 96px;
   line-height: 110%;
 }
 
+h2{
+  font-size: 80px;
+  line-height: 110%;
+}
+
+h3{
+  font-size: 64px;
+  line-height: 110%;
+  /* or 70px */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4{
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 p{
   font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+input, textarea, label{
+  font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
