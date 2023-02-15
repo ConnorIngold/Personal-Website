@@ -6,7 +6,7 @@ interface ContactFormProps {
 	onSubmit: (formData: FormData) => void
 }
 
-interface FormData {
+export interface FormData {
 	name: string
 	email: string
 	message: string
