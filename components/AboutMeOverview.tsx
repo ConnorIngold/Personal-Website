@@ -3,8 +3,8 @@ const AboutMeOverview = () => {
 		<section id="about-me" className="flex border-b">
 			<div className="w-1/2 lg:w-3/4">
 				<div className="py-5 lg:py-10">
-					<h1 className="mb-5 text-4xl lg:text-[90px] lg:leading-[110%]">About Me</h1>
-					<p>
+					<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">About Me</h1>
+					<p className="pr-4">
 						I&apos;m a well versed and passionate JS and Shopify Dev, <br /> Looking to create long lasting relationships with people. <br /> And I mean that!
 					</p>
 				</div>
