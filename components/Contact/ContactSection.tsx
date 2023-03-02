@@ -7,13 +7,13 @@ const ContactSection = () => {
 	}
 
 	return (
-		<div className="flex gap-10 py-7">
-			<div className="flex flex-col justify-between w-2/3 pr-5 border-r border-black">
+		<div className="flex flex-wrap gap-10 lg:flex-nowrap py-7">
+			<div className="flex flex-col justify-between pr-5 border-black lg:border-r lg:w-2/3">
 				<h4>Contact</h4>
-				<h2 className="font- text-[90px] uppercase">Let&apos;s bring your business to the next level</h2>
+				<h2 className="text-xl lg:leading-[110%] lg:text-[90px] uppercase">Let&apos;s bring your business to the next level</h2>
 				<p>Let&apos;s get in touch and I&apos;ll create a new website for your business what will bring you more clients</p>
 			</div>
-			<div className="w-1/3">
+			<div className="lg:w-1/3">
 				<ContactForm onSubmit={handleFormSubmit} />
 			</div>
 		</div>

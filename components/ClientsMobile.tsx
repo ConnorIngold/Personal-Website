@@ -1,5 +1,11 @@
 // images of clients
 import Image from 'next/image'
+import { Autoplay } from 'swiper'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
 
 const Clients = () => {
 	const clients = [
@@ -34,24 +40,14 @@ const Clients = () => {
 	]
 
 	return (
-		<section className="my-7 lg:my-14">
-			<div className="items-center hidden gap-10 lg:flex">
-				<div className="h-full">
-					<h4 className="flex-0">
-						Sites I&apos;ve <br /> Worked On
-					</h4>
-				</div>
+		<section className="my-7">
+			<Swiper modules={[Autoplay]} className="lg:hidden" spaceBetween={50} slidesPerView={1} autoplay={true} rewind={true}>
 				{clients.map((client, index) => (
-					<Image
-						className={`flex-1 object-contain ${index === 0 && 'border-l border-black pl-3'}`}
-						key={client.id}
-						src={client.image}
-						width={client.width}
-						height={client.height}
-						alt={client.name}
-					/>
+					<SwiperSlide key={index}>
+						<Image className="object-contain m-auto" key={client.id} src={client.image} width={client.width} height={client.height} alt={client.name} />
+					</SwiperSlide>
 				))}
-			</div>
+			</Swiper>
 		</section>
 	)
 }

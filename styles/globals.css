@@ -1,113 +1,141 @@
 @font-face {
-  font-family: 'Syne';
-  src: url('../public/fonts/Syne/static/Syne-SemiBold.ttf');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Syne';
+	src: url('../public/fonts/Syne/static/Syne-SemiBold.ttf');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../public/fonts/Roboto/Roboto-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Roboto';
+	src: url('../public/fonts/Roboto/Roboto-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url('../public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Roboto Mono';
+	src: url('../public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
 }
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-  margin: 15px;
-  border: 1px solid #191919;
-  background: #FDFBF5;
+body {
+	margin: 15px;
+	border: 1px solid #191919;
+	background: #fdfbf5;
 }
 
 /*
   Typography
 */
 
-h1, h2, h3{
-  font-family: 'Syne', sans-serif;
-  font-style: normal;
-  font-weight: 500;
+h1,
+h2,
+h3 {
+	font-family: 'Syne', sans-serif;
+	font-style: normal;
+	font-weight: 500;
 }
 
-h1{
-  font-size: 96px;
-  line-height: 110%;
+h1 {
+	font-size: 96px;
+	line-height: 110%;
 }
 
-h2{
-  font-size: 80px;
-  line-height: 110%;
+h2 {
+	font-size: 80px;
+	line-height: 110%;
 }
 
-h3{
-  font-size: 64px;
-  line-height: 110%;
-  /* or 70px */
-
-  text-align: center;
-  text-transform: uppercase;
+h3 {
+	font-size: 64px;
+	line-height: 110%;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-h4{
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+h4 {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
 }
 
-p{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
+p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
 }
 
-nav span{
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  text-transform: uppercase;
+nav span {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	text-transform: uppercase;
 }
 
-input, textarea, label{
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
+input,
+textarea,
+label {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+	h1,
+	.text-title {
+		font-size: 64px;
+	}
+	h2 {
+		font-size: 48px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 16px;
+	}
+	nav span {
+		font-size: 16px;
+	}
+	input,
+	textarea,
+	label {
+		font-size: 16px;
+	}
 }
 
 /*
   Global Components
 */
 
-.btn{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 150%;
-  color: #FDFBF5;
-  background: #191919;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+.btn {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	color: #fdfbf5;
+	background: #191919;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
 }

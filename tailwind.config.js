@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: ['hover:bg-Vue', 'hover:bg-React', 'hover:bg-JavaScript', 'hover:bg-Shopify', 'hover:bg-Tailwind', 'hover:bg-Node', 'hover:bg-Express', 'hover:bg-MongoDB', 'hover:bg-GitHub', 'hover:bg-Heroku', 'hover:bg-Vercel'],
   theme: {
     fontFamily: {
       // Add your custom fonts and enjoy.
@@ -21,23 +22,19 @@ module.exports = {
     borderColor: {
       default: '#1A1918',
     },
-    fontSize: {
-      'title': ['6rem', {
-        "font-family": "Syne",
-        "font-style": "normal",
-        "font-weight": "500",
-        "line-height": "110%",
-        "text-transform": "uppercase",
-      }],
-      '3xl': ['1.875rem', {
-        lineHeight: '2.25rem',
-        letterSpacing: '-0.02em',
-        fontWeight: '700',
-      }],
-    },
     extend: {
       colors: {
-        'black': '#1A1918',
+        'JavaScript': '#f7df1e',
+        'Shopify': '#96bf48',
+        'Vue': '#42b883',
+        'React': '#61dafb',
+        'Tailwind': '#38b2ac',
+        'Node': '#3c873a',
+        'Express': '#430098',
+        'MongoDB': '#47a248',
+        'GitHub': '#333',
+        'Heroku': '#430098',
+        'Vercel': '#000'
       },
     },
   },

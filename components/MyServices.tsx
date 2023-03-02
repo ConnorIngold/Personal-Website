@@ -1,4 +1,5 @@
 import Image from 'next/image'
+// import MyServices json file
 
 const MyServices = () => {
 	return (
@@ -7,6 +8,7 @@ const MyServices = () => {
 				<div className="w-1/3 border-r border-black">
 					<h4>My Services</h4>
 				</div>
+
 				<div className="flex flex-wrap w-2/3 gap-10 pl-10 border-black">
 					<div className="flex gap-10">
 						<div className="flex w-1/2 gap-8">
