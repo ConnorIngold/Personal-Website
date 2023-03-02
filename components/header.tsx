@@ -24,7 +24,10 @@ const Header = () => {
 						</Link>
 						<span className="mx-2 -mt-1 text-2xl">|</span>
 						<div className="flex" id="socials">
-							<Link href="/linkedin" className="border border-black hover:border-[#0072b1] group rounded-full h-7 w-7 p-1 flex items-center justify-center mx-2 text-center">
+							<Link
+								href="https://www.linkedin.com/in/connor-ingold-a39a27100/"
+								className="border border-black hover:border-[#0072b1] group rounded-full h-7 w-7 p-1 flex items-center justify-center mx-2 text-center"
+							>
 								<svg className="w-full" width="14" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										className="transition-colors duration-200 fill-current group-hover:fill-[#0072b1]"
@@ -33,7 +36,10 @@ const Header = () => {
 									/>
 								</svg>
 							</Link>
-							<Link href="/linkedin" className="border border-black hover:border-[#efefef] group h-7 w-7 p-1 rounded-full full flex items-center justify-center mx-2 text-xs">
+							<Link
+								href="https://github.com/ConnorIngold"
+								className="border border-black hover:border-[#efefef] group h-7 w-7 p-1 rounded-full full flex items-center justify-center mx-2 text-xs"
+							>
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										className="transition-colors duration-200 fill-current group-hover:fill-[#efefef]"
@@ -42,7 +48,7 @@ const Header = () => {
 									/>
 								</svg>
 							</Link>
-							<Link href="/youtube" className="flex items-center justify-center p-1 mx-2 text-xs border border-black rounded-full h-7 w-7 full">
+							{/* <Link href="/youtube" className="flex items-center justify-center p-1 mx-2 text-xs border border-black rounded-full h-7 w-7 full">
 								<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										className="transition-colors duration-200 fill-current hover:fill-[#FF0000]"
@@ -58,7 +64,7 @@ const Header = () => {
 										fill="#1A1918"
 									/>
 								</svg>
-							</Link>
+							</Link> */}
 						</div>
 					</nav>
 				</div>
