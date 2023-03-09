@@ -10,6 +10,7 @@ const MyProjects = () => {
 			width: 1817,
 			height: 960,
 			link: '#',
+			year: 2023,
 		},
 		{
 			id: 2,
@@ -18,6 +19,7 @@ const MyProjects = () => {
 			width: 630,
 			height: 300,
 			link: '#',
+			year: 2023,
 		},
 		{
 			id: 3,
@@ -26,6 +28,7 @@ const MyProjects = () => {
 			width: 630,
 			height: 300,
 			link: '#',
+			year: 2023,
 		},
 		{
 			id: 4,
@@ -34,6 +37,7 @@ const MyProjects = () => {
 			width: 630,
 			height: 300,
 			link: '#',
+			year: 2023,
 		},
 		{
 			id: 5,
@@ -42,6 +46,7 @@ const MyProjects = () => {
 			width: 630,
 			height: 300,
 			link: '#',
+			year: 2023,
 		},
 	]
 
@@ -94,12 +99,21 @@ const MyProjects = () => {
 				</p>
 			</div>
 			<div className="flex items-center gap-10">
-				<ProjectCard name={projects[0].name} url={projects[0].url} width={projects[0].width} height={projects[0].height} link={projects[0].link} backgroundColor={'#BAA086'} />
+				<ProjectCard
+					year={2023}
+					name={projects[0].name}
+					url={projects[0].url}
+					width={projects[0].width}
+					height={projects[0].height}
+					link={projects[0].link}
+					backgroundColor={'#BAA086'}
+				/>
 			</div>
 			<div className="border-t border-black my-7 lg:my-14"></div>
 			<div className="flex flex-wrap gap-5 my-7 lg:my-14">
 				<ProjectCard
 					key={projects[1].id}
+					year={2023}
 					name={projects[1].name}
 					url={projects[1].url}
 					width={projects[1].width}
@@ -109,6 +123,7 @@ const MyProjects = () => {
 				/>
 				<ProjectCard
 					key={projects[2].id}
+					year={2023}
 					name={projects[2].name}
 					url={projects[2].url}
 					width={projects[2].width}
@@ -120,6 +135,7 @@ const MyProjects = () => {
 			<div className="flex flex-wrap gap-5 my-7 lg:my-14">
 				<ProjectCard
 					key={projects[1].id}
+					year={2023}
 					name={projects[1].name}
 					url={projects[1].url}
 					width={projects[1].width}
@@ -129,6 +145,7 @@ const MyProjects = () => {
 				/>
 				<ProjectCard
 					key={projects[2].id}
+					year={2023}
 					name={projects[2].name}
 					url={projects[2].url}
 					width={projects[2].width}

@@ -11,16 +11,16 @@ const Header = () => {
 
 					<nav className="hidden lg:flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full">
 						<Link href="/about">
-							<span className="px-2 text-[64px] lg:text-[20px] uppercase">About Me</span>
+							<span className="px-2 text-[64px] lg:text-[18px] uppercase">About Me</span>
+						</Link>
+						<Link href="/services">
+							<span className="px-2 text-[64px] lg:text-[18px] uppercase">Services</span>
 						</Link>
 						<Link href="/projects">
-							<span className="px-2 text-[64px] lg:text-[20px] uppercase">Services</span>
+							<span className="px-2 text-[64px] lg:text-[18px] uppercase">My Projects</span>
 						</Link>
 						<Link href="/contact">
-							<span className="px-2 text-[64px] lg:text-[20px] uppercase">My Projects</span>
-						</Link>
-						<Link href="/contact">
-							<span className="px-2 text-[64px] lg:text-[20px] uppercase">Contact</span>
+							<span className="px-2 text-[64px] lg:text-[18px] uppercase">Contact</span>
 						</Link>
 						<span className="mx-2 -mt-1 text-2xl">|</span>
 						<div className="flex" id="socials">

@@ -10,7 +10,7 @@ const AboutMeOverview = () => {
 				</div>
 			</div>
 			<div className="w-1/2 border-l lg:w-1/4">
-				<div className="flex-col lg:justify-between max-w-[80%] mx-auto py-2 lg:py-4 h-full flex gap-5">
+				<div className="flex-col lg:justify-between lg:max-w-[80%] mx-auto p-2 lg:py-4 h-full flex gap-5">
 					<h5>
 						<span className="text-black opacity-50">Location:</span>
 						<br />

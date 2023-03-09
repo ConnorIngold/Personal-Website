@@ -83,6 +83,7 @@ nav span {
 	font-size: 20px;
 	line-height: 150%;
 	text-transform: uppercase;
+	word-spacing: -5px;
 }
 
 input,

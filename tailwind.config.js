@@ -13,6 +13,7 @@ module.exports = {
     fontFamily: {
       // Add your custom fonts and enjoy.
       'Roboto': ["Roboto", "Sans-serif"],
+      'Roboto-Mono': ["Roboto Mono", "Sans-serif"],
       'Syne': ["Syne", "Sans-serif"],
     },
     container: {
