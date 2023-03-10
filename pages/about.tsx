@@ -17,7 +17,7 @@ const about = () => {
 				<MyStart />
 				<h2 className="py-5 text-center lg:py-10">WHO I AM NOW?</h2>
 				<ImageTextV2></ImageTextV2>
-				<ContactSection />
+				<ContactSection title="Let's bring your business to the next level" />
 			</div>
 		</Layout>
 	)

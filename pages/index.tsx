@@ -37,7 +37,7 @@ const Home: NextPage = () => {
 				{isMobile ? <MyServicesMobile /> : <MyServices />}
 				<MyProjects />
 				<MyStart />
-				<ContactSection />
+				<ContactSection title="Let’s bring your business to the next level" />
 			</main>
 		</Layout>
 	)

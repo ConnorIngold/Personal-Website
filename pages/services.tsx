@@ -71,15 +71,15 @@ const Services = () => {
 					</div>
 					<div className="w-1/2 border-l lg:w-1/4">
 						<div className="flex-col lg:justify-evenly lg:max-w-[80%] mx-auto p-2 lg:py-4 h-full flex gap-5">
-							<h5 className="font-Roboto-Mono uppercase">Custom Web Apps Building</h5>
-							<h5 className="font-Roboto-Mono uppercase">Social media sites</h5>
-							<h5 className="font-Roboto-Mono uppercase">Shopify theme development</h5>
+							<h5 className="uppercase font-Roboto-Mono">Custom Web Apps Building</h5>
+							<h5 className="uppercase font-Roboto-Mono">Social media sites</h5>
+							<h5 className="uppercase font-Roboto-Mono">Shopify theme development</h5>
 						</div>
 					</div>
 				</section>
 				{projects.map((project, index) => (
 					<Service key={project.id} name={services[index].name} description={services[index].description} url={services[index].url} align={index % 2 === 0 ? 'left' : 'right'}>
-						<ProjectCard backgroundColor={project.color} url={project.url} width={project.width} height={project.height} link={project.link} />
+						<ProjectCard name={project.name} backgroundColor={project.color} url={project.url} width={project.width} height={project.height} link={project.link} />
 					</Service>
 				))}
 			</main>
