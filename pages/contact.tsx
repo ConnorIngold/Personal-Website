@@ -1,15 +1,10 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
 import Layout from '../components/global/Layout'
 import ContactSection from '../components/global/Contact/ContactSection'
-import TitleIconBlocks from '../components/global/TitleIconBlocks'
+import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlocks'
 import { services } from './../public/data/services'
 
 const Contact: React.FC = () => {
-	const isMobile = useMediaQuery({
-		query: '(max-width: 1024px)',
-	})
-
 	return (
 		<Layout>
 			<div className="container">

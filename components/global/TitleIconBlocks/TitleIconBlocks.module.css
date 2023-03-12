@@ -1,0 +1,25 @@
+.active {
+	transform: scale(1.15) translateX(5px);
+	transition: all 0.3s ease-in-out;
+}
+
+.tabs-controls > .active:nth-child(3) {
+	transform: scale(1.15) translateX(-5px);
+}
+
+.tabs-controls > .active:last-child {
+	transform: scale(1.15) translateX(-5px);
+}
+
+.inactive {
+	transform: scale(1) translateX(0px);
+	transition: all 0.3s ease-in-out;
+}
+
+.active svg {
+	fill: #baa086;
+}
+
+.tabs-controls svg {
+	width: 100%;
+}

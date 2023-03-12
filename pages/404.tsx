@@ -1,9 +1,10 @@
-const ErrorPage = () => {
+import ErrorPage from '../components/pages/404/ErrorPage'
+const Error = () => {
 	return (
-		<div>
-			<h1>404 - Page Not Found</h1>
-		</div>
+		<>
+			<ErrorPage />
+		</>
 	)
 }
 
-export default ErrorPage
+export default Error

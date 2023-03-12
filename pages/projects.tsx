@@ -1,7 +1,7 @@
 import Layout from '../components/global/Layout'
 import MyProjects from '../components/pages/projects/MyProjects'
 import projectSteps from './../public/data/projectSteps'
-import TitleIconBlocks from '../components/global/TitleIconBlocks'
+import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlocks'
 
 const Projects = () => {
 	return (
@@ -12,7 +12,7 @@ const Projects = () => {
 						<div className="py-5 lg:py-10">
 							<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">My Projects</h1>
 							<p className="pr-4">
-								There will be a small description of the services, but there is no text yet, <br /> so I added this text here as a placeholder
+								There will be a small description of the projects, but there is no text yet, <br /> so I added this text here as a placeholder
 							</p>
 						</div>
 					</div>

@@ -128,6 +128,33 @@ label {
 	}
 }
 
+@media (max-width: 768px) {
+	h1,
+	.text-title {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 14px;
+	}
+	nav span {
+		font-size: 16px;
+	}
+	input,
+	textarea,
+	label {
+		font-size: 12px;
+	}
+}
+
 /*
   Global Components
 */
@@ -154,4 +181,10 @@ label {
 
 .btn:focus {
 	background-color: #74583c;
+}
+
+@media (max-width: 768px) {
+	.btn {
+		font-size: 16px;
+	}
 }

@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
-import { useState, useEffect } from 'react'
+import { useIsScreenSize } from '../hooks/useIsScreenSize'
 import Image from 'next/image'
 import Layout from '../components/global/Layout'
 import Clients from '../components/Clients'
 import ClientsMobile from '../components/ClientsMobile'
-import TitleIconBlocks from '../components/global/TitleIconBlocks'
-
+import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlocks'
 import MyProjects from '../components/MyProjects'
 import MyStart from '../components/MyStart'
 import ContactSection from '../components/global/Contact/ContactSection'
@@ -13,14 +12,7 @@ import ContactSection from '../components/global/Contact/ContactSection'
 import { services } from './../public/data/services'
 
 const Home: NextPage = () => {
-	const [isMobile, setIsMobile] = useState(false)
-
-	useEffect(() => {
-		const handleResize = () => setIsMobile(window.innerWidth < 1024)
-		handleResize()
-		window.addEventListener('resize', handleResize)
-		return () => window.removeEventListener('resize', handleResize)
-	}, [])
+	const isMobile = useIsScreenSize(768)
 
 	return (
 		<Layout>

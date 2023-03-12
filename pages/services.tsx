@@ -4,7 +4,7 @@ import Service from '../components/Service'
 import ProjectImgCard from '../components/global/ProjectImgCard'
 import ContactSection from '../components/global/Contact/ContactSection'
 import projectSteps from './../public/data/projectSteps'
-import TitleIconBlocks from '../components/global/TitleIconBlocks'
+import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlocks'
 
 // a services array
 

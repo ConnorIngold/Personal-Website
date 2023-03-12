@@ -57,7 +57,7 @@ const MyProjects = () => {
 	return (
 		<section className="my-7 lg:my-14">
 			<div className="h-full my-3 lg:my-7">
-				<h3 className="title">My projects</h3>
+				<h2 className="mb-5 text-center title">My projects</h2>
 				<p className="text-center">
 					Some text about this portfolio project goes here but for now it’s just a placeholder. Some text about this portfolio project goes here but for now it’s just a
 					placeholder. Some text about this portfolio project goes here but for now it’s just a placeholder.
