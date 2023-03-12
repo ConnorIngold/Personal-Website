@@ -7,7 +7,7 @@ export const services = [
 			</svg>
 		),
 		title: 'Custom Web Apps Building',
-		description: 'Some text about this service goes here but for now it’s just a placeholder here',
+		description: 'Lorem text about this service goes here but for now it’s just a placeholder here',
 	},
 	{
 		icon: (
@@ -17,7 +17,7 @@ export const services = [
 			</svg>
 		),
 		title: 'Mobile App Development',
-		description: 'Some text about this service goes here but for now it’s just a placeholder here',
+		description: 'Ipsum text about this service goes here but for now it’s just a placeholder here',
 	},
 	{
 		icon: (

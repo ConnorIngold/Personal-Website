@@ -17,7 +17,7 @@ interface Props {
 const Service = (props: Props): JSX.Element => {
 	return (
 		// if align is left, then add the class 'flex-row-reverse' to the section
-		<section className={`flex my-5 py-5 gap-10 border-b ${props.align === 'right' && 'flex-row-reverse'}`}>
+		<section className={`flex my-5 py-5 gap-10 border-b flex-wrap lg:flex-nowrap ${props.align === 'right' && 'flex-row-reverse'}`}>
 			<div className="flex-1 pr-10 border-r">{props.children}</div>
 			<div className="flex flex-col justify-center flex-1 gap-5 text-left">
 				<h5>{props.aboveHeadingText}</h5>

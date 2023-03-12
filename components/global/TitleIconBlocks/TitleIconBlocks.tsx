@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useIsScreenSize } from '../../../hooks/useIsScreenSize'
 import styles from './TitleIconBlocks.module.css'
 import './TitleIconBlocks.module.css'
@@ -39,6 +39,14 @@ interface TitleIconBlocksProps {
 const TitleIconBlocks = ({ services, heading, sectionClassName }: TitleIconBlocksProps) => {
 	const isMobile = useIsScreenSize(1024)
 	const [activeTab, setActiveTab] = useState(0)
+	const intervalRef = useRef<string | number | NodeJS.Timeout | undefined>()
+
+	useEffect(() => {
+		intervalRef.current = setInterval(() => {
+			setActiveTab(prevTab => (prevTab + 1) % services.length)
+		}, 4000)
+		return () => clearInterval(intervalRef.current)
+	}, [services.length])
 
 	if (isMobile) {
 		const tabs: TabProps[] = services.map(service => ({
@@ -49,6 +57,7 @@ const TitleIconBlocks = ({ services, heading, sectionClassName }: TitleIconBlock
 
 		const handleTabClick = (index: number) => {
 			setActiveTab(index)
+			clearInterval(intervalRef.current)
 		}
 		return (
 			<section className={sectionClassName ?? 'my-7 lg:my-14'} id="TitleIconBlocks">

@@ -34,7 +34,13 @@ module.exports = {
 		borderColor: {
 			default: '#1A1918',
 		},
+
 		extend: {
+			height: {
+				600: '600px',
+				'h-600': '600px',
+				'h-700': '700px',
+			},
 			colors: {
 				gold: '#baa086',
 				JavaScript: '#f7df1e',
