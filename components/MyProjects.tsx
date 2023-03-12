@@ -5,6 +5,7 @@ const projects = [
 		id: 1,
 		name: 'The Nue Co',
 		url: '/images/Nue_co_big_banner.png',
+		alt: 'project',
 		width: 1817,
 		height: 960,
 		link: '#',
@@ -14,6 +15,7 @@ const projects = [
 		id: 2,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'project',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -23,6 +25,7 @@ const projects = [
 		id: 3,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'project',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -32,6 +35,7 @@ const projects = [
 		id: 4,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'project',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -41,6 +45,7 @@ const projects = [
 		id: 5,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'project',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -63,6 +68,7 @@ const MyProjects = () => {
 					year={projects[0].year}
 					name={projects[0].name}
 					url={projects[0].url}
+					alt={projects[0].alt}
 					width={projects[0].width}
 					height={projects[0].height}
 					link={projects[0].link}
@@ -76,6 +82,7 @@ const MyProjects = () => {
 						key={project.id}
 						name={project.name}
 						url={project.url}
+						alt={project.alt}
 						width={project.width}
 						height={project.height}
 						link={project.link}

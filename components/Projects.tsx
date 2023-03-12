@@ -5,6 +5,7 @@ const projectsArr = [
 		id: 1,
 		name: 'The Nue Co',
 		url: '/images/Nue_co_big_banner.png',
+		alt: 'projhect',
 		width: 1817,
 		height: 960,
 		link: '#',
@@ -14,6 +15,7 @@ const projectsArr = [
 		id: 2,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'projhect',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -23,6 +25,7 @@ const projectsArr = [
 		id: 3,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'projhect',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -32,6 +35,7 @@ const projectsArr = [
 		id: 4,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'projhect',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -41,6 +45,7 @@ const projectsArr = [
 		id: 5,
 		name: 'Autonative',
 		url: '/images/D&D_Page_image.png',
+		alt: 'projhect',
 		width: 630,
 		height: 300,
 		link: '#',
@@ -66,6 +71,7 @@ const ProjectsComp = () => {
 							key={project.id}
 							name={project.name}
 							url={project.url}
+							alt={project.alt}
 							width={project.width}
 							height={project.height}
 							link={project.link}
