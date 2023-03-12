@@ -1,6 +1,7 @@
 // contact form in footer name, email & message.
 import React from 'react'
 import { useState } from 'react'
+import ContactInput from './ContactInput'
 
 interface ContactFormProps {
 	onSubmit: (formData: FormData) => void
@@ -19,6 +20,16 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 		message: '',
 	})
 
+	const [isFocused, setIsFocused] = useState(false)
+
+	const handleFocus = () => {
+		setIsFocused(true)
+	}
+
+	const handleBlur = () => {
+		setIsFocused(false)
+	}
+
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 		setFormData({
 			...formData,
@@ -33,20 +44,24 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 	}
 
 	return (
-		<form className="flex flex-wrap gap-5 text-left" onSubmit={handleSubmit}>
-			<div className="w-full">
-				<label htmlFor="name">Name:</label>
-				<input className="w-full bg-transparent border-b" type="text" name="name" value={formData.name} onChange={handleChange} required />
-			</div>
+		<form className="flex flex-wrap text-left gap -8" onSubmit={handleSubmit}>
+			<ContactInput id="name" label="Your Name" type="text" />
+			<ContactInput id="email" label="Email:" type="email" />
 
-			<div className="w-full">
-				<label htmlFor="email">Email:</label>
-				<input className="w-full bg-transparent border-b" type="email" name="email" value={formData.email} onChange={handleChange} required />
-			</div>
-
-			<div className="w-full">
-				<label htmlFor="message">Message:</label>
-				<textarea className="w-full bg-transparent border-b min-h-[150px]" name="message" value={formData.message} onChange={handleChange} required></textarea>
+			<div className="relative w-full mt-7">
+				<label htmlFor="message" className={`absolute ${isFocused ? 'text-gray-600 text-sm -top-6' : 'text-xl -top-1'} transition-all duration-200`}>
+					Message:
+				</label>
+				<textarea
+					className="w-full bg-transparent border-b min-h-[150px] resize-none outline-none"
+					name="message"
+					onFocus={handleFocus}
+					onBlur={handleBlur}
+					value={formData.message}
+					onChange={handleChange}
+					draggable="false"
+					required
+				></textarea>
 			</div>
 
 			<button className="px-4 pt-2 mt-5 text-white rounded btn bg-offBlack" type="submit">

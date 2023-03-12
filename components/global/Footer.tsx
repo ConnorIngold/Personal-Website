@@ -3,9 +3,9 @@ import Link from 'next/link'
 const Footer = () => {
 	return (
 		<footer className="py-6">
-			<div className="container p-0 border-t">
-				<nav className="flex flex-wrap justify-between items-center lg:flex-nowrap py-6">
-					<div className="border-t w-1/5"></div>
+			<div className="container">
+				<nav className="flex flex-wrap items-center justify-between py-6 border-t lg:flex-nowrap">
+					<div className="w-1/5 border-t"></div>
 					<Link href="/">
 						<span className="px-4">Home</span>
 					</Link>
@@ -13,7 +13,7 @@ const Footer = () => {
 						<span className="px-4">About</span>
 					</Link>
 					<div className="flex flex-col justify-center gap-2">
-						<h4 className="font-Syne text-center capitalize">Connor Ingold</h4>
+						<h4 className="text-center capitalize font-Syne">Connor Ingold</h4>
 						<div className="flex justify-center" id="socials">
 							<a
 								className="border border-black hover:border-[#0072b1] group rounded-full h-8 w-8 p-1 flex items-center justify-center mx-2 text-center"
@@ -47,7 +47,7 @@ const Footer = () => {
 					<Link href="/contact">
 						<span className="px-4">Contact</span>
 					</Link>
-					<div className="border-t w-1/5"></div>
+					<div className="w-1/5 border-t"></div>
 				</nav>
 			</div>
 		</footer>

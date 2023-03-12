@@ -1,7 +1,10 @@
 // arrow syntax
-import Layout from '../components/Layout'
+import Layout from '../components/global/Layout'
 import Service from '../components/Service'
-import ProjectCard from '../components/ProjectCard'
+import ProjectImgCard from '../components/global/ProjectImgCard'
+import ContactSection from '../components/global/Contact/ContactSection'
+import projectSteps from './../public/data/projectSteps'
+import TitleIconBlocks from '../components/global/TitleIconBlocks'
 
 // a services array
 
@@ -11,8 +14,9 @@ const Services = () => {
 			id: 1,
 			name: 'Autonative',
 			url: '/images/D&D_Page_image.png',
-			width: 630,
-			height: 300,
+			alt: 'project',
+			width: 904,
+			height: 302,
 			link: '#',
 			color: '#baa086',
 		},
@@ -20,8 +24,9 @@ const Services = () => {
 			id: 2,
 			name: 'Autonative',
 			url: '/images/D&D_Page_image.png',
-			width: 630,
-			height: 300,
+			alt: 'project',
+			width: 904,
+			height: 302,
 			link: '#',
 			color: '#baa086',
 		},
@@ -29,8 +34,9 @@ const Services = () => {
 			id: 3,
 			name: 'Autonative',
 			url: '/images/D&D_Page_image.png',
-			width: 630,
-			height: 300,
+			alt: 'project',
+			width: 904,
+			height: 302,
 			link: '#',
 			color: '#baa086',
 		},
@@ -78,10 +84,20 @@ const Services = () => {
 					</div>
 				</section>
 				{projects.map((project, index) => (
-					<Service key={project.id} name={services[index].name} description={services[index].description} url={services[index].url} align={index % 2 === 0 ? 'left' : 'right'}>
-						<ProjectCard name={project.name} backgroundColor={project.color} url={project.url} width={project.width} height={project.height} link={project.link} />
+					<Service
+						key={project.id}
+						buttonText="View project"
+						name={services[index].name}
+						description={services[index].description}
+						url={services[index].url}
+						align={index % 2 === 0 ? 'left' : 'right'}
+					>
+						<ProjectImgCard backgroundColor={project.color} url={project.url} width={project.width} height={project.height} link={project.link} alt={project.alt} />
 					</Service>
 				))}
+				<TitleIconBlocks services={projectSteps} heading="PROJECT STEPS" sectionClassName="my-7 lg:my-14" />
+				<div className="border-b"></div>
+				<ContactSection title="Let’s bring your business to the next level" />
 			</main>
 		</Layout>
 	)

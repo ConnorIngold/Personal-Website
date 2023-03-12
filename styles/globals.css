@@ -23,6 +23,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root {
+		--color-gold: 186 160 134;
+	}
+}
+
 body {
 	margin: 15px;
 	border: 1px solid #191919;
@@ -54,7 +60,6 @@ h2 {
 h3 {
 	font-size: 64px;
 	line-height: 110%;
-	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -128,15 +133,25 @@ label {
 */
 
 .btn {
-	font-family: 'Roboto';
+	font-family: 'Roboto Mono';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 150%;
+	line-height: 100%;
 	color: #fdfbf5;
-	background: #191919;
+	background-color: #191919;
 	border: none;
 	border-radius: 5px;
 	padding: 10px 20px;
 	cursor: pointer;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	background-color: rgb(var(--color-gold));
+}
+
+.btn:focus {
+	background-color: #74583c;
 }

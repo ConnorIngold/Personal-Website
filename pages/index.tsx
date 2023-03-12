@@ -1,15 +1,16 @@
 import type { NextPage } from 'next'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '../components/global/Layout'
 import Clients from '../components/Clients'
 import ClientsMobile from '../components/ClientsMobile'
-import MyServices from '../components/MyServices'
-import MyServicesMobile from '../components/MyServicesMobile'
+import TitleIconBlocks from '../components/global/TitleIconBlocks'
 
 import MyProjects from '../components/MyProjects'
 import MyStart from '../components/MyStart'
-import ContactSection from '../components/Contact/ContactSection'
+import ContactSection from '../components/global/Contact/ContactSection'
+
+import { services } from './../public/data/services'
 
 const Home: NextPage = () => {
 	const [isMobile, setIsMobile] = useState(false)
@@ -34,7 +35,8 @@ const Home: NextPage = () => {
 					<Image loading="eager" src="/images/Connor_BG.webp" className="rounded-2xl border border-[#1A1918]" width={1784} height={728} alt="Banner" />
 				</section>
 				{isMobile ? <ClientsMobile /> : <Clients />}
-				{isMobile ? <MyServicesMobile /> : <MyServices />}
+
+				<TitleIconBlocks services={services} heading="What I Do" sectionClassName="my-7 lg:my-14" />
 				<MyProjects />
 				<MyStart />
 				<ContactSection title="Let’s bring your business to the next level" />

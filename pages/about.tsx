@@ -1,11 +1,11 @@
-import Layout from '../components/Layout'
+import Layout from '../components/global/Layout'
 import AboutMeOverview from '../components/AboutMeOverview'
 import MySkills from '../components/MySkills'
-import ImageText from '../components/ImageText'
-import ImageTextV2 from '../components/ImageTextV2'
+import ImageText from '../components/pages/about/ImageText'
+import ImageTextV2 from '../components/pages/about/ImageTextV2'
 // import MyStart
 import MyStart from '../components/MyStart'
-import ContactSection from '../components/Contact/ContactSection'
+import ContactSection from '../components/global/Contact/ContactSection'
 
 const about = () => {
 	return (
