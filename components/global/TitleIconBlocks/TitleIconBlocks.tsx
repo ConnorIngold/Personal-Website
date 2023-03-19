@@ -62,7 +62,7 @@ const TitleIconBlocks = ({ services, heading, sectionClassName }: TitleIconBlock
 		return (
 			<section className={sectionClassName ?? 'my-7 lg:my-14'} id="TitleIconBlocks">
 				<div id="mobile" className="flex flex-col">
-					<div className={`border-b border-black mb-10`}>
+					<div className={`border-b border-black mb-10 pb-5 lg:p-0`}>
 						<h4>{heading}</h4>
 					</div>
 					<div className="relative">
