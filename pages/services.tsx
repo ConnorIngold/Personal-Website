@@ -1,4 +1,6 @@
 // arrow syntax
+import { projects } from '../public/data/projects'
+
 import Layout from '../components/global/Layout'
 import Service from '../components/Service'
 import ProjectImgCard from '../components/global/ProjectImgCard'
@@ -9,39 +11,6 @@ import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlock
 // a services array
 
 const Services = () => {
-	const projects = [
-		{
-			id: 1,
-			name: 'Autonative',
-			url: '/images/D&D_Page_image.png',
-			alt: 'project',
-			width: 904,
-			height: 302,
-			link: '#',
-			color: '#baa086',
-		},
-		{
-			id: 2,
-			name: 'Autonative',
-			url: '/images/D&D_Page_image.png',
-			alt: 'project',
-			width: 904,
-			height: 302,
-			link: '#',
-			color: '#baa086',
-		},
-		{
-			id: 3,
-			name: 'Autonative',
-			url: '/images/D&D_Page_image.png',
-			alt: 'project',
-			width: 904,
-			height: 302,
-			link: '#',
-			color: '#baa086',
-		},
-	]
-
 	const services = [
 		{
 			id: 1,

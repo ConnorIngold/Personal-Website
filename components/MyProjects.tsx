@@ -3,12 +3,12 @@ import ProjectCard from './global/ProjectImgCard'
 const projects = [
 	{
 		id: 1,
-		name: 'The Nue Co',
-		url: '/images/Nue_co_big_banner.png',
+		name: 'Candy Kittens',
+		url: '/images/Candy_Kittens_page_image.png',
 		alt: 'project',
 		width: 1817,
 		height: 960,
-		link: '#',
+		link: '/project/candy-kittens',
 		year: 2023,
 	},
 	{
@@ -59,8 +59,8 @@ const MyProjects = () => {
 			<div className="h-full my-3 lg:my-7">
 				<h2 className="mb-5 text-center title">My projects</h2>
 				<p className="text-center">
-					Some text about this portfolio project goes here but for now it’s just a placeholder. Some text about this portfolio project goes here but for now it’s just a
-					placeholder. Some text about this portfolio project goes here but for now it’s just a placeholder.
+					Over the past 5 years, I&apos;ve had the opportunity to work in a variety of industries and use a range of technologies. <br /> Here are some of my favorite projects have
+					been involved in:
 				</p>
 			</div>
 			<div className="flex items-center gap-10">

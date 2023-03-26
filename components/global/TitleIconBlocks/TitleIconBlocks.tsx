@@ -22,7 +22,7 @@ const IconTextBlock = ({ icon, title, description, borderColor, index }: IconBlo
 		<div className="flex gap-8 mt-12 mb-5 lg:m-0">
 			<div className="flex-shrink-0 hidden lg:block">{icon}</div>
 			<div className="flex flex-col">
-				<h3 className="lg:text-3xl">{title}</h3>
+				<h3 className="mb-1 lg:text-3xl	">{title}</h3>
 				<p>{description}</p>
 			</div>
 			{borderColor && <div className={`${index === 0 && `border-l`} border-${borderColor} pl-8`}> </div>}

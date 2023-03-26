@@ -13,7 +13,7 @@ function NavIcon({ toggle, open }: { toggle: () => void; open: boolean }) {
 	return (
 		<>
 			{/* Icon 1 */}
-			<div id="nav-icon" className={open ? 'open' : ''} onClick={toggle}>
+			<div id="nav-icon" className={`${open && 'open'} lg:hidden`} onClick={toggle}>
 				<span></span>
 				<span></span>
 				<span></span>

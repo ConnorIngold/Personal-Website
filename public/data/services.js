@@ -6,8 +6,8 @@ export const services = [
 				<rect x="10.5" y="11.125" width="75" height="75" stroke="#1A1918" />
 			</svg>
 		),
-		title: 'Custom Web Apps Building',
-		description: 'Lorem text about this service goes here but for now it’s just a placeholder here',
+		title: 'Shopify Theme Development',
+		description: 'Develop bespoke Shopify themes for captivating stores that enhance brand identity, user experience, and most importantly sales.',
 	},
 	{
 		icon: (
@@ -16,8 +16,8 @@ export const services = [
 				<path d="M7.36379 83.25L48.5 12L89.6362 83.25H7.36379Z" stroke="#1A1918" />
 			</svg>
 		),
-		title: 'Mobile App Development',
-		description: 'Ipsum text about this service goes here but for now it’s just a placeholder here',
+		title: 'Custom Web Development',
+		description: 'Deliver dynamic web applications using cutting-edge frontend technologies like Vue.js and React.js for exceptional user experiences.',
 	},
 	{
 		icon: (
@@ -26,8 +26,9 @@ export const services = [
 				<rect x="8.5" y="11.5" width="79" height="79" rx="39.5" stroke="#1A1918" />
 			</svg>
 		),
-		title: 'Web Design',
-		description: 'Some text about this service goes here but for now it’s just a placeholder here',
+		title: 'Shopify App Development',
+		description:
+			'Expand your Shopify stores capabilities with our custom app development, tailored to streamline operations and drive business growth through seamless integrations.',
 	},
 	{
 		icon: (
@@ -36,7 +37,7 @@ export const services = [
 				<path d="M14.792 30.0387L48.5 10.5774L82.208 30.0387V68.9613L48.5 88.4226L14.792 68.9613V30.0387Z" stroke="#1A1918" />
 			</svg>
 		),
-		title: 'Search Engine Optimization',
-		description: 'Some text about this service goes here but for now it’s just a placeholder here',
+		title: 'Website SEO Development',
+		description: 'I optimize websites for higher search rankings, boosting organic traffic and online visibility through SEO development best practices.',
 	},
 ]

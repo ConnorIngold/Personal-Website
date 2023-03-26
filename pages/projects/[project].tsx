@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Layout from '../../components/global/Layout'
 import { projects } from '../../public/data/projects'
@@ -13,8 +14,10 @@ export interface IProject {
 	alt: string
 	width: number
 	height: number
+	service: string
 	link: string
 	color: string
+	date: string
 }
 
 const ProjectPage: React.FC = () => {
@@ -40,11 +43,27 @@ const ProjectPage: React.FC = () => {
 					</div>
 					<div className="w-1/2 border-l lg:w-1/4">
 						<div className="flex-col lg:justify-evenly lg:max-w-[80%] mx-auto p-2 lg:py-4 h-full flex gap-5">
-							<h5 className="uppercase font-Roboto-Mono">Custom Web Apps Building</h5>
-							<h5 className="uppercase font-Roboto-Mono">Social media sites</h5>
-							<h5 className="uppercase font-Roboto-Mono">Shopify theme development</h5>
+							<div className="flex flex-col gap-3">
+								<h5 className="uppercase font-Roboto-Mono text-gold">Client</h5>
+								<h5 className="uppercase font-Roboto-Mono">{project.title}</h5>
+							</div>
+							<div className="flex flex-col gap-3">
+								<h5 className="uppercase font-Roboto-Mono text-gold">Service</h5>
+								<h5 className="uppercase font-Roboto-Mono">{project.service}</h5>
+							</div>
+							<div className="flex flex-col gap-3">
+								<h5 className="uppercase font-Roboto-Mono text-gold">Date</h5>
+								<h5 className="uppercase font-Roboto-Mono">{project.date}</h5>
+							</div>
 						</div>
 					</div>
+				</section>
+				<section id="project" className="flex items-center gap-10 my-5 lg:my-10">
+					<a href="#" className="flex flex-col items-center justify-center flex-1 gap-3">
+						<div className="flex flex-col items-center justify-center w-full gap-5 rounded-xl">
+							<Image src="/images/Candy_Kittens_page_image.png" width={1817} height={960} alt="project" />
+						</div>
+					</a>
 				</section>
 			</main>
 		</Layout>
