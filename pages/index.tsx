@@ -8,6 +8,7 @@ import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlock
 import MyProjects from '../components/MyProjects'
 import MyStart from '../components/MyStart'
 import ContactSection from '../components/global/Contact/ContactSection'
+import UnderConstruction from '../components/global/UnderConstruction'
 
 import { services } from './../public/data/services'
 
@@ -17,10 +18,11 @@ const Home: NextPage = () => {
 	return (
 		<Layout>
 			<main className="container">
+				<UnderConstruction />
 				<section className="text-center my-7 lg:my-14">
-					<h1 className="mb-5 text-black text-title">Welcome to my portfolio!</h1>
+					<h1 className="text-black mb-7 text-title">Welcome to my portfolio!</h1>
 					<p>
-						I&apos;m a remote web developer based in London and Northampton <br /> with over 4 years of experience.{' '}
+						I&apos;m a remote web developer based in London and Northampton <br /> with over half a decade of experience.{' '}
 					</p>
 				</section>
 				<section id="banner">
@@ -28,7 +30,7 @@ const Home: NextPage = () => {
 				</section>
 				{isMobile ? <ClientsMobile /> : <Clients />}
 
-				<TitleIconBlocks services={services} heading="What I Do" sectionClassName="my-7 lg:my-14" />
+				<TitleIconBlocks services={services} heading="What I Do" sectionClassName="my-7 lg:my-24" />
 				<MyProjects />
 				<MyStart />
 				<ContactSection title="Let’s bring your business to the next level" />

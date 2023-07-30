@@ -42,6 +42,7 @@ module.exports = {
 				'h-700': '700px',
 			},
 			colors: {
+				siteGold: '#74583c',
 				gold: '#baa086',
 				JavaScript: '#f7df1e',
 				Shopify: '#96bf48',

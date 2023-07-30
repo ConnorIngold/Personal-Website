@@ -22,7 +22,7 @@ const IconTextBlock = ({ icon, title, description, borderColor, index }: IconBlo
 		<div className="flex gap-8 mt-12 mb-5 lg:m-0">
 			<div className="flex-shrink-0 hidden lg:block">{icon}</div>
 			<div className="flex flex-col">
-				<h3 className="mb-1 lg:text-3xl	">{title}</h3>
+				<h3 className="mb-2 lg:text-3xl ">{title}</h3>
 				<p>{description}</p>
 			</div>
 			{borderColor && <div className={`${index === 0 && `border-l`} border-${borderColor} pl-8`}> </div>}
@@ -87,10 +87,10 @@ const TitleIconBlocks = ({ services, heading, sectionClassName }: TitleIconBlock
 	return (
 		<section className={sectionClassName ?? 'my-7 lg:my-14'} id="TitleIconBlocks">
 			<div id="desktop" className="hidden gap-10 lg:flex">
-				<div className={`${heading.includes('STEPS') ? 'w-1/5' : 'block w-1/5 xl:w-1/3'} border-r border-black`}>
+				<div className={`${heading.includes('STEPS') ? 'w-1/5' : 'block w-1/6 xl:w-1/4'} border-r border-black`}>
 					<h4>{heading}</h4>
 				</div>
-				<div className={`flex flex-wrap ${heading.includes('STEPS') ? 'w-4/5' : 'w-4/5 xl:w-2/3'} gap-10 border-black`}>
+				<div className={`flex flex-wrap ${heading.includes('STEPS') ? 'w-4/5' : 'w-5/6 xl:w-4/4'} gap-10 border-black`}>
 					<div className="flex border-black">
 						{services.slice(0, 2).map((service, index) => (
 							<div className="flex w-1/2 gap-8" key={index}>

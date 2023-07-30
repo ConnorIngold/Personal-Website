@@ -3,13 +3,22 @@ import ProjectCard from './global/ProjectImgCard'
 const projects = [
 	{
 		id: 1,
-		name: 'Candy Kittens',
+		name: 'candy-kittens',
+		title: 'Candy Kittens',
+		description:
+			'Candy Kittens is a British confectionery brand that produces gourmet sweets with playful flavors and natural ingredients. It was founded in 2012 and is known for its bold packaging. They also offer vegan and vegetarian options.',
+		projectURL: 'https://candykittens.co.uk',
+		projectDescription:
+			'The Candy Kittens online Shopify store is an e-commerce platform that allows customers to browse, purchase, and pay for products online. Its hosted on Shopifys servers, responsible for managing the websites functionality, security, and order processing.',
 		url: '/images/Candy_Kittens_page_image.png',
 		alt: 'project',
 		width: 1817,
 		height: 960,
-		link: '/project/candy-kittens',
-		year: 2023,
+		service: 'Shopify theme development',
+		link: '/projects/candy-kittens',
+		color: '#baa086',
+		date: '2021 - 2023',
+		logo: '/images/Candy_Kittens_logo.png',
 	},
 	{
 		id: 2,
@@ -55,7 +64,7 @@ const projects = [
 
 const MyProjects = () => {
 	return (
-		<section className="my-7 lg:my-14">
+		<section className="my-7 lg:my-16">
 			<div className="h-full my-3 lg:my-7">
 				<h2 className="mb-5 text-center title">My projects</h2>
 				<p className="text-center">

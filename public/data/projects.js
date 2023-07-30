@@ -5,6 +5,8 @@ export const projects = [
 		title: 'Doisy & Dam',
 		description:
 			'Doisy & Dam is a UK-based chocolate company that produces high-quality artisan chocolate bars. The company was founded in 2013 by Ed Smith and Rich Wilkinson, who met while studying at university. They were inspired to start the company after realizing that there was a gap in the market for high-quality, ethically-sourced chocolate.',
+		projectURL: 'https://doisyanddam.com',
+		projectDescription: '',
 		url: '/images/D&D_Page_image.png',
 		alt: 'project',
 		width: 1404,
@@ -21,6 +23,9 @@ export const projects = [
 		title: 'Candy Kittens',
 		description:
 			'Candy Kittens is a British confectionery brand that produces gourmet sweets with playful flavors and natural ingredients. It was founded in 2012 and is known for its bold packaging. They also offer vegan and vegetarian options.',
+		projectURL: 'https://candykittens.co.uk',
+		projectDescription:
+			'The Candy Kittens online Shopify store is an e-commerce platform that allows customers to browse, purchase, and pay for products online. Its hosted on Shopifys servers, responsible for managing the websites functionality, security, and order processing.',
 		url: '/images/Candy_Kittens_page_image.png',
 		alt: 'project',
 		width: 1817,
@@ -33,9 +38,11 @@ export const projects = [
 	},
 	{
 		id: 3,
-		name: 'autonative',
-		title: 'Autonative',
+		name: 'fully-fused',
+		title: 'Fully Fused',
 		description: 'lorem10',
+		projectURL: '',
+		projectDescription: '',
 		url: '/images/D&D_Page_image.png',
 		alt: 'project',
 		width: 1404,

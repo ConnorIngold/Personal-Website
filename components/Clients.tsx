@@ -34,10 +34,11 @@ const Clients = () => {
 	]
 
 	return (
-		<section className="overflow-x-hidden my-7 lg:my-14">
+		<section className="overflow-x-hidden my-7 lg:my-20">
 			<div className="items-center hidden gap-10 lg:flex">
 				<div className="h-full">
 					<h4 className="flex-0">
+						A few of the <br />
 						Sites I&apos;ve <br /> Worked On
 					</h4>
 				</div>

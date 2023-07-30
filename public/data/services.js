@@ -37,7 +37,7 @@ export const services = [
 				<path d="M14.792 30.0387L48.5 10.5774L82.208 30.0387V68.9613L48.5 88.4226L14.792 68.9613V30.0387Z" stroke="#1A1918" />
 			</svg>
 		),
-		title: 'Website SEO Development',
-		description: 'I optimize websites for higher search rankings, boosting organic traffic and online visibility through SEO development best practices.',
+		title: 'Teaching & Mentorship',
+		description: 'After helping many of my peers learn to code, I have developed a passion for teaching and mentoring others to help them achieve their professional goals.',
 	},
 ]

@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
 			<div className="container">
 				<ContactSection title="Let’s bring your business to the next level" />
 				<div className="w-full border-b"></div>
-				<TitleIconBlocks services={services} heading="What I Do" sectionClassName="my-7 lg:my-14" />
+				<TitleIconBlocks services={services} heading="What I Do" sectionClassName="my-7 lg:my-16" />
 			</div>
 		</Layout>
 	)
