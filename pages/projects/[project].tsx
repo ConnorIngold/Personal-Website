@@ -9,10 +9,8 @@ import ContentfulImage from '../../components/global/ContentfulImage'
 // types
 import type { ProjectData } from '../../types/ProjectData' // Import the ProjectData interface
 
-const formatDate = (dateString: string) => {
-	const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long' }
-	return new Date(dateString).toLocaleDateString(undefined, options)
-}
+// utils
+import { formatDate } from '../../utils/formatDate'
 
 const ProjectPage: React.FC = () => {
 	const router = useRouter()

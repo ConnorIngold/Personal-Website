@@ -12,21 +12,91 @@ const Clients = () => {
 		},
 		{
 			id: 2,
-			name: 'Autonative',
-			image: '/images/ford_logo.png',
+			name: 'billionaire boys club',
+			image: '/images/billionaire_boys_club_logo.png',
 			width: 236,
 			height: 100,
 		},
 		{
 			id: 3,
-			name: 'Candy Kittens',
+			name: 'The Samsung Frame',
 			image: '/images/The_frame_logo.png',
 			width: 236,
 			height: 100,
 		},
 		{
 			id: 4,
+			name: 'dandd-logo',
+			image: '/images/dandd-logo.avif',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 5,
+			name: 'RNLI',
+			image: '/images/RNLI_logo.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 6,
+			name: 'Roomix',
+			image: '/images/Roomix_Logo.avif',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 7,
+			name: 'debshelf',
+			image: '/images/logoblue.c38cd28d.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 8,
 			name: 'Candy Kittens',
+			image: '/images/candy_kittens_logo.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 9,
+			name: 'billionaire boys club',
+			image: '/images/billionaire_boys_club_logo.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 10,
+			name: 'The Samsung Frame',
+			image: '/images/The_frame_logo.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 11,
+			name: 'dandd-logo',
+			image: '/images/dandd-logo.avif',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 12,
+			name: 'RNLI',
+			image: '/images/RNLI_logo.png',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 13,
+			name: 'Roomix',
+			image: '/images/Roomix_Logo.avif',
+			width: 236,
+			height: 100,
+		},
+		{
+			id: 14,
+			name: 'debshelf',
 			image: '/images/logoblue.c38cd28d.png',
 			width: 236,
 			height: 100,
@@ -42,16 +112,21 @@ const Clients = () => {
 						Sites I&apos;ve <br /> Worked On
 					</h4>
 				</div>
-				{clients.map((client, index) => (
-					<Image
-						className={`flex-1 object-contain ${index === 0 && 'border-l border-black pl-3'}`}
-						key={client.id}
-						src={client.image}
-						width={client.width}
-						height={client.height}
-						alt={client.name}
-					/>
-				))}
+				<div className="logo-slider">
+					<div className="logo-slide-track">
+						{clients.map((client, index) => (
+							<div className="logo-slide" key={client.id}>
+								<Image
+									className={`flex-1 object-contain ${index === 0 && 'border-l border-black pl-3'}`}
+									src={client.image}
+									width={client.width}
+									height={client.height}
+									alt={client.name}
+								/>
+							</div>
+						))}
+					</div>
+				</div>
 			</div>
 		</section>
 	)

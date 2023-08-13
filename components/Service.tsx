@@ -1,13 +1,10 @@
 import Button from '../components/global/Button'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import ContentfulImage from '../components/global/ContentfulImage'
 // types
 import type { ProjectData } from '../types/ProjectData' // Import the ProjectData interface
+// utils
+import { formatDate } from '../utils/formatDate'
 
-// A single service component. which has props to align the image on the left or right. the image is a prop, so it can be changed to any image
-// use flex direction to change the order of the image and text
-
-// Extend the ProjectData interface with additional properties
 interface ServiceData extends ProjectData {
 	// Add your additional properties here
 	children: React.ReactNode

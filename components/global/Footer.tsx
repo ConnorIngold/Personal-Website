@@ -40,6 +40,9 @@ const Footer = () => {
 								</svg>
 							</Link>
 						</div>
+						<Link href="/termsandconditions" className="text-center text-grey">
+							<small className="text-gray-500 underline">Terms & conditions</small>
+						</Link>
 					</div>
 					<Link href="/projects">
 						<span className="px-4 hover:text-gold ease">Projects</span>
