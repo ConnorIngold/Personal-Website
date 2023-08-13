@@ -1,0 +1,9 @@
+- [] Fix homepage "My Projects" section
+- [] Fix mobile on single project page
+- [] Add all projects to Contentful with appropriate tags
+- [] On the My Services page, make it so when click on "See related projects" it takes you to associated projects (Filtering System)
+- [] Make the contact form work
+- [] Make a mega menu for Services
+- [] Make black and white logos
+- [] Make a favicon
+- [] Page to page animations with [Framer Motion](www.framer.com)
