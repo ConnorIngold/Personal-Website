@@ -2,7 +2,7 @@ import Button from '../components/global/Button'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import ContentfulImage from '../components/global/ContentfulImage'
 // types
-import type { ProjectData } from '../types/ProjectData.d.ts' // Import the ProjectData interface
+import type { ProjectData } from '../types/ProjectData' // Import the ProjectData interface
 
 // A single service component. which has props to align the image on the left or right. the image is a prop, so it can be changed to any image
 // use flex direction to change the order of the image and text
@@ -23,7 +23,7 @@ const Service = (props: ServiceData): JSX.Element => {
 				<h5>{props.title}</h5>
 				<h3 className="font-normal">{props.name}</h3>
 				<h5>{props.startDate}</h5>
-				{documentToReactComponents(props.projectDescription)}
+				{props.projectDescription && documentToReactComponents(props.projectDescription)}
 				<a className="block mt-2" href={props.projectUrl}>
 					<Button>See Project</Button>
 				</a>

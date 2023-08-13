@@ -7,7 +7,7 @@ import { fetchProjectData } from '../../../utils/contentfulUtils' // Import the 
 import ContentfulImage from '../../../components/global/ContentfulImage'
 
 // types
-import type { ProjectData } from '../../../types/ProjectData.d.ts' // Import the ProjectData interface
+import type { ProjectData } from '../../../types/ProjectData' // Import the ProjectData interface
 
 const MyProjects = () => {
 	const [loading, setLoading] = useState(true)
@@ -43,17 +43,8 @@ const MyProjects = () => {
 	return (
 		<section className="my-7 lg:my-14">
 			{projects.map((project, index) => (
-				<Service
-					key={index}
-					aboveHeadingText="My work"
-					buttonText="view project"
-					name={project.title}
-					date={project.startDate}
-					description={project.projectDescription}
-					url={project.projectUrl}
-					align={'left'}
-				>
-					<ContentfulImage image={project.mainImage.fields} />
+				<Service key={index} name={project.title} startDate={project.startDate} projectDescription={project.projectDescription} projectUrl={project.projectUrl} align={'left'}>
+					<ContentfulImage image={project?.mainImage?.fields} />
 				</Service>
 			))}
 		</section>

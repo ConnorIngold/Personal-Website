@@ -7,7 +7,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import ContentfulImage from '../../components/global/ContentfulImage'
 
 // types
-import type { ProjectData } from '../../types/ProjectData.d.ts' // Import the ProjectData interface
+import type { ProjectData } from '../../types/ProjectData' // Import the ProjectData interface
 
 const formatDate = (dateString: string) => {
 	const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long' }
@@ -53,7 +53,7 @@ const ProjectPage: React.FC = () => {
 					<div className="w-1/2 lg:w-3/4">
 						<div className="py-5 lg:py-10 lg:pr-10">
 							<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">{project.title}</h1>
-							{documentToReactComponents(project.projectDescription)}
+							{project.projectDescription && documentToReactComponents(project.projectDescription)}
 						</div>
 					</div>
 					<div className="w-1/2 border-l lg:w-1/4">
@@ -69,7 +69,7 @@ const ProjectPage: React.FC = () => {
 							<div className="flex flex-col gap-1">
 								<h5 className="uppercase font-Roboto-Mono text-gold">Date</h5>
 								<h5 className="uppercase font-Roboto-Mono">
-									{formatDate(project.startDate)} - {formatDate(project.endDate)}
+									{project.startDate && formatDate(project.startDate)} - {project.endDate && formatDate(project.endDate)}
 								</h5>
 							</div>
 						</div>
@@ -82,7 +82,7 @@ const ProjectPage: React.FC = () => {
 						<div className="flex flex-col items-center justify-center w-full gap-5 rounded-xl">
 							<div className="px-20 py-16 bg-gold rounded-xl">
 								<div className="overflow-hidden rounded-xl">
-									<ContentfulImage image={project.mainImage.fields} />
+									<ContentfulImage image={project.mainImage && project.mainImage.fields} />
 								</div>
 							</div>
 						</div>
@@ -95,8 +95,8 @@ const ProjectPage: React.FC = () => {
 						</div>
 						<div className="flex flex-wrap w-4/5 gap-10 border-black xl:w-2/3">
 							<div className="flex flex-col items-center w-full gap-5 mx-auto text-center lg:w-3/4">
-								<ContentfulImage image={project.companyLogo.fields} />
-								{documentToReactComponents(project.companyDescription)}
+								<ContentfulImage image={project.companyLogo && project.companyLogo.fields} />
+								{project.companyDescription && documentToReactComponents(project.companyDescription)}
 							</div>
 						</div>
 					</div>
