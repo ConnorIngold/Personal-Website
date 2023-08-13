@@ -1,20 +1,20 @@
 export const projects = [
 	{
 		id: 1,
-		name: 'doisy&dam',
-		title: 'Doisy & Dam',
-		description:
-			'Doisy & Dam is a UK-based chocolate company that produces high-quality artisan chocolate bars. The company was founded in 2013 by Ed Smith and Rich Wilkinson, who met while studying at university. They were inspired to start the company after realizing that there was a gap in the market for high-quality, ethically-sourced chocolate.',
-		projectURL: 'https://doisyanddam.com',
+		name: '	',
+		title: 'Roomix',
+		company_description:
+			'Roomix is a platform offering DIY project kits for easy home interior upgrades. They provide materials, instructions, and support for personalized design transformations.',
+		projectURL: 'https://www.roomixdiy.com/pages/shelf-builder',
 		projectDescription: '',
-		url: '/images/D&D_Page_image.png',
+		url: '/images/clients/roomix/roomixEdit.webp',
 		alt: 'project',
 		width: 1404,
 		height: 600,
-		service: 'Shopify them development',
-		link: '#',
+		service: 'Shopify theme development',
+		link: '/projects/roomix',
 		color: '#baa086',
-		date: '2021 - 2023',
+		date: '2023',
 		logo: '',
 	},
 	{

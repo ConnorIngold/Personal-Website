@@ -7,10 +7,10 @@ const Footer = () => {
 				<nav className="flex flex-wrap items-center justify-between py-6 border-t lg:flex-nowrap">
 					<div className="w-1/5 border-t"></div>
 					<Link href="/">
-						<span className="px-4">Home</span>
+						<span className="px-4 transition-all hover:text-gold ease">Home</span>
 					</Link>
 					<Link href="/about">
-						<span className="px-4">About</span>
+						<span className="px-4 hover:text-grey hover:text-gold ease">About</span>
 					</Link>
 					<div className="flex flex-col justify-center gap-2">
 						<h4 className="text-center capitalize font-Syne">Connor Ingold</h4>
@@ -42,10 +42,10 @@ const Footer = () => {
 						</div>
 					</div>
 					<Link href="/projects">
-						<span className="px-4">Projects</span>
+						<span className="px-4 hover:text-gold ease">Projects</span>
 					</Link>
 					<Link href="/contact">
-						<span className="px-4">Contact</span>
+						<span className="px-4 hover:text-gold ease">Contact</span>
 					</Link>
 					<div className="w-1/5 border-t"></div>
 				</nav>

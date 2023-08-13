@@ -46,7 +46,7 @@ const Header = () => {
 					<nav className="hidden lg:flex items-center justify-center lg:relative lg:bg-transparent lg:w-auto lg:flex-row | fixed bg-white w-full flex-col bottom-0 left-0 h-full">
 						{/* {navigationLinks.map(({ href, label }) => (
 							<Link key={href} href={href}>
-								<span className={`px-2 text-[64px] lg:text-[18px] transition-all ease-in-out duration-300 hover:font-bold uppercase ${currentPath === link.path && 'text-gold'}`}>
+								<span className={`px-2 text-[64px] lg:text-[18px] transition-all ease-in-out duration-300 uppercase ${currentPath === link.path && 'text-gold'}`}>
 									{label}
 								</span>
 							</Link>
@@ -54,8 +54,9 @@ const Header = () => {
 						<ul className="flex">
 							{links.map(link => (
 								<li key={link.path}>
-									<Link href={link.path} className={`list-none px-2 text-[64px] lg:text-[18px] hover:font-bold uppercase ${currentPath === link.path && 'text-gold'}`}>
+									<Link href={link.path} className={`list-none px-2 text-[64px] lg:text-[18px] transition-all ease  uppercase ${currentPath === link.path && 'text-gold'}`}>
 										{link.label}
+										<span className="slider"></span>
 									</Link>
 								</li>
 							))}
@@ -113,7 +114,7 @@ const Header = () => {
 					>
 						{/* {navigationLinks.map(({ href, label }) => (
 							<Link key={href} href={href}>
-								<span className={`px-2 text-[64px] lg:text-[18px] transition-all ease-in-out duration-300 hover:font-bold uppercase ${currentPath === link.path && 'text-gold'}`}>
+								<span className={`px-2 text-[64px] lg:text-[18px] transition-all ease-in-out duration-300 uppercase ${currentPath === link.path && 'text-gold'}`}>
 									{label}
 								</span>
 							</Link>
@@ -121,7 +122,7 @@ const Header = () => {
 						<ul className="flex flex-col items-center justify-center gap-4">
 							{links.map(link => (
 								<li key={link.path}>
-									<Link href={link.path} className={`list-none px-2 text-xl hover:font-bold uppercase font-Roboto-Mono ${currentPath === link.path && 'text-gold'}`}>
+									<Link href={link.path} className={`list-none px-2 text-xl uppercase font-Roboto-Mono ${currentPath === link.path && 'text-gold'}`}>
 										{link.label}
 									</Link>
 								</li>
