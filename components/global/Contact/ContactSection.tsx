@@ -7,7 +7,6 @@ interface Props {
 const ContactSection = (props: Props) => {
 	const handleFormSubmit = (formData: FormData) => {
 		// handle form submission here, e.g. send the data to a server
-		console.log(formData)
 	}
 
 	return (

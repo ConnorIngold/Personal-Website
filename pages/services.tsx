@@ -14,19 +14,19 @@ const Services = () => {
 	const services = [
 		{
 			id: 1,
+			title: 'Shopify theme development',
+			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
+			url: '/images/D&D_Page_image.png',
+		},
+		{
+			id: 1,
 			title: 'Custom Web Apps Building',
 			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
 			url: '/images/D&D_Page_image.png',
 		},
 		{
-			id: 2,
-			title: 'Social Media Marketing',
-			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
-			url: '/images/D&D_Page_image.png',
-		},
-		{
 			id: 3,
-			title: 'Shopify theme development',
+			title: 'Social Media Marketing',
 			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
 			url: '/images/D&D_Page_image.png',
 		},
@@ -40,7 +40,7 @@ const Services = () => {
 						<div className="py-5 lg:py-10">
 							<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">My Services</h1>
 							<p className="pr-4">
-								There will be a small description of the services, but there is no text yet, <br /> so I added this text here as a placeholder
+								I provide a wide a specifc set of services to help you start or grow your business. 
 							</p>
 						</div>
 					</div>
@@ -55,9 +55,9 @@ const Services = () => {
 				{projects.map((project, index) => (
 					<ServiceCard
 						key={project.id}
-						title={services[index].title}
-						description={services[index].description && services[index].description}
-						url={services[index].url && services[index].url}
+						title={'test'}
+						description={project.description && project.description}
+						url={project.url && project.url}
 						align={index % 2 === 0 ? 'left' : 'right'}
 						buttonText="See Related Projects"
 					>

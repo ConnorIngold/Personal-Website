@@ -5,8 +5,6 @@ const contentfulLoader = ({ src, width, quality }: any) => {
 }
 
 const ContentfulImage = (imageObj: any) => {
-	console.log('imageObj', imageObj)
-
 	return (
 		<Image
 			width={imageObj.image.file.details.image.width || 1000}

@@ -17,7 +17,7 @@ const ProjectImgCard: React.FC<ProjectImgCardProps> = props => {
 	return (
 		<a href={props.link} className="flex flex-col items-center justify-center flex-1 gap-3">
 			<div style={{ background: `${props.backgroundColor}` }} className={`flex flex-col items-center justify-center gap-5 w-full rounded-xl`}>
-				<Image className="flex-1 object-contain" src={props.url} width={props.width} height={props.height} alt={props.alt} />
+				<Image className="flex-1 object-cover aspect-video rounded-3xl p-2 lg:p-5" src={props.url} width={props.width} height={props.height} alt={props.alt} />
 			</div>
 			<div className="flex justify-between w-full">
 				<h4>{props.name}</h4> <h4>{props.year}</h4>

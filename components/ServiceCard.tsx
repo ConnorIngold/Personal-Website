@@ -3,15 +3,15 @@ import Button from '../components/global/Button'
 // use flex direction to change the order of the image and text
 
 interface Props {
-	title: string
-	description: string
+	title?: string
+	description?: string
 	aboveHeadingText?: string
 	date?: string
 	price?: string
-	url: string
-	children: React.ReactElement
+	url?: string
+	children?: React.ReactElement
 	align: 'left' | 'right'
-	buttonText: string
+	buttonText?: string
 }
 
 const ServiceCard = (props: Props): JSX.Element => {

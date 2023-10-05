@@ -6,7 +6,7 @@ const Clients = () => {
 		{
 			id: 1,
 			name: 'Candy Kittens',
-			image: '/images/candy_kittens_logo.png',
+			image: '/images/clients/candykittens/candy_kittens_logo.png',
 			width: 236,
 			height: 100,
 		},
@@ -55,7 +55,7 @@ const Clients = () => {
 		{
 			id: 8,
 			name: 'Candy Kittens',
-			image: '/images/candy_kittens_logo.png',
+			image: '/images/clients/candykittens/candy_kittens_logo.png',
 			width: 236,
 			height: 100,
 		},

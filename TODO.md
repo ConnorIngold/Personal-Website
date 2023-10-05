@@ -1,8 +1,10 @@
-- [] Fix homepage "My Projects" section
-- [] Fix mobile on single project page
+- [x] Fix homepage "My Projects" section
+- [x] Fix mobile on single project page
+- [x] Fix the footer on mobile
 - [] Add all projects to Contentful with appropriate tags
 - [] On the My Services page, make it so when click on "See related projects" it takes you to associated projects (Filtering System)
 - [] Make the contact form work
+### Nice to have
 - [] Make a mega menu for Services
 - [] Make black and white logos
 - [] Make a favicon

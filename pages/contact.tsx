@@ -1,10 +1,9 @@
-import React from 'react'
 import Layout from '../components/global/Layout'
 import ContactSection from '../components/global/Contact/ContactSection'
 import TitleIconBlocks from '../components/global/TitleIconBlocks/TitleIconBlocks'
 import { services } from './../public/data/services'
 
-const Contact: React.FC = () => {
+const Contact = () => {
 	return (
 		<Layout>
 			<div className="container">

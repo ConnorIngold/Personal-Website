@@ -44,4 +44,5 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, backgroundColor = '#b
 	)
 }
 
+export default ProjectCard
 // Path: components/project-card.tsx

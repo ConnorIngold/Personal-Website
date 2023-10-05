@@ -4,12 +4,12 @@ const Footer = () => {
 	return (
 		<footer className="py-6">
 			<div className="container">
-				<nav className="flex flex-wrap items-center justify-between py-6 border-t lg:flex-nowrap">
-					<div className="w-1/5 border-t"></div>
-					<Link href="/">
+				<nav className="flex flex-wrap items-center justify-center sm:justify-between py-6 border-t lg:flex-nowrap">
+					<div className="w-1/5 border-t hidden lg:block"></div>
+					<Link className='hidden sm:block' href="/">
 						<span className="px-4 transition-all hover:text-gold ease">Home</span>
 					</Link>
-					<Link href="/about">
+					<Link className='hidden sm:block' href="/about">
 						<span className="px-4 hover:text-grey hover:text-gold ease">About</span>
 					</Link>
 					<div className="flex flex-col justify-center gap-2">
@@ -44,13 +44,13 @@ const Footer = () => {
 							<small className="text-gray-500 underline">Terms & conditions</small>
 						</Link>
 					</div>
-					<Link href="/projects">
+					<Link className='hidden sm:block' href="/projects">
 						<span className="px-4 hover:text-gold ease">Projects</span>
 					</Link>
-					<Link href="/contact">
+					<Link className='hidden sm:block' href="/contact">
 						<span className="px-4 hover:text-gold ease">Contact</span>
 					</Link>
-					<div className="w-1/5 border-t"></div>
+					<div className="w-1/5 border-t  hidden lg:block"></div>
 				</nav>
 			</div>
 		</footer>

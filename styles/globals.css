@@ -201,6 +201,13 @@ label {
 	transition: all 0.2s ease-in-out;
 }
 
+.btn.secondary {
+	background-color: #fdfbf5;
+	color: #191919;
+	border: 1px solid #191919;
+	padding: 9px 19px;
+}
+
 .btn:hover {
 	background-color: rgb(var(--color-gold));
 }
@@ -208,6 +215,8 @@ label {
 .btn:focus {
 	background-color: #74583c;
 }
+
+
 
 @media (max-width: 768px) {
 	.btn {
@@ -390,4 +399,19 @@ label {
 .modal-content svg path {
 	fill: transparent;
 	stroke: #74583c;
+}
+
+@media (max-width: 768px) {
+	header{
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: #ffffff21;
+		backdrop-filter: blur(2px);
+		border: none;
+		margin: 1px;
+	}
+	header .border-b {
+		border: none;
+	}
 }
