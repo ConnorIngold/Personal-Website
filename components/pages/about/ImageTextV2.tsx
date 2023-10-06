@@ -6,7 +6,7 @@ const ImageTextV2 = () => {
 	return (
 		<div className="flex flex-col items-center justify-center gap-10 py-5 border-y lg:py-10 md:flex-row md:justify-between">
 			<div className="md:w-2/4">
-				<Image className="w-full rounded-2xl" src="/images/banner.webp" width={500} height={500} alt="hero image" />
+				<Image className="w-full rounded-2xl" src="/images/pages/about/banner.webp" width={500} height={500} alt="hero image" />
 			</div>
 			<div className="md:w-2/4">
 				<div className="top">

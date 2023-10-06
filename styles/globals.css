@@ -406,7 +406,7 @@ label {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		background: #ffffff21;
+		background: linear-gradient(180deg, rgba(253,251,245,0.9) 0%, rgba(253,251,245,0.50253851540616) 60%, rgba(253,251,245,0) 100%);
 		backdrop-filter: blur(2px);
 		border: none;
 		margin: 1px;

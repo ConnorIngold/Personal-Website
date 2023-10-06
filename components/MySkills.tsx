@@ -71,7 +71,7 @@ const MySkills = () => {
 							skill.name === 'JavaScript' ? 'hover:text-black' : 'hover:text-white'
 						} cursor-help duration-200 flex flex-row items-start gap-2.5 px-4 py-2.5 rounded-md border-2 border-solid border-[#1A1918] `}
 					>
-						<p>{skill.name}</p>
+						<>{skill.name}</>
 					</div>
 				))}
 			</div>

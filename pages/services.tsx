@@ -1,5 +1,5 @@
 // arrow syntax
-import { projects } from '../public/data/projects'
+// import { projects } from '../public/data/projects'
 
 import Layout from '../components/global/Layout'
 import ServiceCard from '../components/ServiceCard'
@@ -15,20 +15,42 @@ const Services = () => {
 		{
 			id: 1,
 			title: 'Shopify theme development',
-			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
-			url: '/images/D&D_Page_image.png',
+			description: `As a Shopify developer, I specialize in crafting custom, user-friendly themes tailored to boost online businesses. Using HTML, CSS, JavaScript, and Shopify's Liquid language, I create responsive themes that align with brand identity and captivate target audiences. Services include theme customization, third-party app integration, speed optimization, and SEO adherence. Let's enhance your online presence and drive business growth with a standout Shopify theme.`,
+			linkToService: '/shopifythemes',
+			backgroundColor: '#8bc74c',
+			image: {
+				url: '/images/pages/services/shopify.png',
+				width: 1000,
+				height: 700,
+				alt: 'image'
+			}
+			
 		},
 		{
-			id: 1,
-			title: 'Custom Web Apps Building',
-			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
-			url: '/images/D&D_Page_image.png',
+			id: 2,
+			title: 'Custom Web Development',
+			description: `As a front-end developer specializing in Vue.js and React.js, I craft engaging, interactive web experiences. Using these powerful frameworks, I create dynamic, responsive, and visually appealing user interfaces. My expertise lies in efficiently translating design concepts into seamless, functional applications that resonate with users. Services include front-end development, UI/UX design integration, optimization for speed and performance, and cross-browser compatibility. Let's elevate your web presence and engage your audience with a compelling, modern, and user-friendly front end.`,
+			linkToService: '/images/pages/services/shopify.png',
+			backgroundColor: '#000551',
+			image: {
+				url: '/images/pages/services/frontend.png',
+				width: 1000,
+				height: 700,
+				alt: 'image'
+			}
 		},
 		{
 			id: 3,
-			title: 'Social Media Marketing',
-			description: 'There will be a small description of the service, but there is no text yet, so I added this text here as a placeholder',
-			url: '/images/D&D_Page_image.png',
+			title: 'Shopify app development',
+			description: `As a Shopify app developer, I focus on building tailored, efficient apps to enhance online stores. With expertise in web technologies and Shopify's APIs, I create seamless apps that optimize functionality and user experience. Services include app customization, integration with Shopify stores, performance optimization, and adherence to SEO best practices. Let's elevate your Shopify store's capabilities with a customized app that suits your unique needs and boosts business productivity.`,
+			linkToService: '/images/pages/services/shopifyApp.png',
+			backgroundColor: '#243c36',
+			image: {
+				url: '/images/pages/services/shopifyApp.png',
+				width: 1000,
+				height: 700,
+				alt: 'image'
+			}		
 		},
 	]
 
@@ -46,22 +68,22 @@ const Services = () => {
 					</div>
 					<div className="w-1/2 border-l lg:w-1/4">
 						<div className="flex-col lg:justify-evenly lg:max-w-[80%] mx-auto p-2 lg:py-4 h-full flex gap-5">
-							<h5 className="uppercase font-Roboto-Mono">Custom Web Apps Building</h5>
-							<h5 className="uppercase font-Roboto-Mono">Social media sites</h5>
 							<h5 className="uppercase font-Roboto-Mono">Shopify theme development</h5>
+							<h5 className="uppercase font-Roboto-Mono">Custom web development</h5>
+							<h5 className="uppercase font-Roboto-Mono">Shopify App development</h5>
 						</div>
 					</div>
 				</section>
-				{projects.map((project, index) => (
+				{services.map((service, index) => (
 					<ServiceCard
-						key={project.id}
-						title={'test'}
-						description={project.description && project.description}
-						url={project.url && project.url}
+						key={service.id}
+						title={service.title}
+						description={service.description}
+						url={service.linkToService}
 						align={index % 2 === 0 ? 'left' : 'right'}
 						buttonText="See Related Projects"
 					>
-						<ProjectImgCard backgroundColor={project.color} url={project.url} width={project.width} height={project.height} link={project.link} alt={project.alt} />
+						<ProjectImgCard backgroundColor={service.backgroundColor} url={service.image.url} width={service.image.width} height={service.image.height} link={service.linkToService} alt={service.image.alt} />
 					</ServiceCard>
 				))}
 				<TitleIconBlocks services={projectSteps} heading="PROJECT STEPS" sectionClassName="my-7 lg:my-14" />

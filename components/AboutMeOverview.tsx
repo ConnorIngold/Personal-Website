@@ -20,7 +20,7 @@ const AboutMeOverview = () => {
 						<span className="text-black opacity-50">Age:</span>
 						<br />
 						{/* code for my age I was on the 30/06/1998 taking into consideration the month and day */}
-						{new Date().getFullYear() - 1998 - (new Date().getMonth() < 5 || (new Date().getMonth() === 5 && new Date().getDate() < 30) ? 1 : 0)} years
+						{new Date().getFullYear() - 1998 - (new Date().getMonth() < 5 || (new Date().getMonth() === 5 && new Date().getDate() < 30) ? 1 : 0)} years old
 						{/* if it's my birthday say happy birthday me: */}
 						{new Date().getMonth() === 5 && new Date().getDate() === 30 ? <p className="text-sm">(It&apos;s my Birthday is today btw!)</p> : ''}
 					</h5>
@@ -28,7 +28,7 @@ const AboutMeOverview = () => {
 						<span className="text-black opacity-50">Languages:</span>
 						<br />
 						English: Native <br /> Japanese: Beginner <br />
-						<i className="text-black opacity-50">(Travelling to Japan In September!)</i>
+						<i className="text-black opacity-50">(I spent 2 weeks in Japan)</i>
 					</h5>
 				</div>
 			</div>
