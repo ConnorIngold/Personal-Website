@@ -12,7 +12,7 @@ const Projects = () => {
 						<div className="py-5 lg:py-10">
 							<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">My Projects</h1>
 							<p className="pr-4">
-								Over the past 5+ years, I&apos;ve been a front-end and Shopify developer at various agencies. In front-end development, I&apos;ve crafted engaging websites and applications using React.js and Vue.js, ensuring exceptional user experiences. Additionally, I've specialized in Shopify app and theme development, optimizing online stores and enhancing functionalities for businesses. My expertise lies in seamless integration, customization, and adhering to SEO best practices, ultimately improving online presence and driving growth through the Shopify platform.
+								Over the past 5+ years, I&apos;ve been a front-end and Shopify developer at various agencies. In front-end development, I&apos;ve crafted engaging websites and applications using React.js and Vue.js, ensuring exceptional user experiences. Additionally, I&apos;ve specialized in Shopify app and theme development, optimizing online stores and enhancing functionalities for businesses. My expertise lies in seamless integration, customization, and adhering to SEO best practices, ultimately improving online presence and driving growth through the Shopify platform.
 							</p>
 						</div>
 					</div>
