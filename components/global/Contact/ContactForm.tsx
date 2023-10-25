@@ -39,6 +39,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
+		console.log("formData", formData);
+		
 		onSubmit(formData)
 		setFormData({ name: '', email: '', message: '' })
 	}
