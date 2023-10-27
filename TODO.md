@@ -5,11 +5,13 @@
 - [x] Services page
 - [x] Make sure there no filler text
 - [x] sort out image file organisation
-- [] Make the contact form work
+- [X] Make the contact form work
 - [] Add all projects to Contentful with appropriate tags
+- [] Add Shopify app project
 - [] On the My Services page, make it so when click on "See related projects" it takes you to associated projects (Filtering System)
-### Nice to have
 - [] Make a mega menu for Services
-- [] Make black and white logos
 - [] Make a favicon
+- [] GET FEEDBACK
+### Nice to have
+- [] Make black and white logos
 - [] Page to page animations with [Framer Motion](www.framer.com)

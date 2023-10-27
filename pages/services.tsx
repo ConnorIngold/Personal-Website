@@ -16,7 +16,7 @@ const Services = () => {
 			id: 1,
 			title: 'Shopify theme development',
 			description: `As a Shopify developer, I specialize in crafting custom, user-friendly themes tailored to boost online businesses. Using HTML, CSS, JavaScript, and Shopify's Liquid language, I create responsive themes that align with brand identity and captivate target audiences. Services include theme customization, third-party app integration, speed optimization, and SEO adherence. Let's enhance your online presence and drive business growth with a standout Shopify theme.`,
-			linkToService: '/shopifythemes',
+			linkToService: '/projects?tag=shopifyThemeDevelopment',
 			backgroundColor: '#8bc74c',
 			image: {
 				url: '/images/pages/services/shopify.png',
@@ -30,7 +30,7 @@ const Services = () => {
 			id: 2,
 			title: 'Custom Web Development',
 			description: `As a front-end developer specializing in Vue.js and React.js, I craft engaging, interactive web experiences. Using these powerful frameworks, I create dynamic, responsive, and visually appealing user interfaces. My expertise lies in efficiently translating design concepts into seamless, functional applications that resonate with users. Services include front-end development, UI/UX design integration, optimization for speed and performance, and cross-browser compatibility. Let's elevate your web presence and engage your audience with a compelling, modern, and user-friendly front end.`,
-			linkToService: '/images/pages/services/shopify.png',
+			linkToService: '/projects?tag=customWebDevelopment',
 			backgroundColor: '#000551',
 			image: {
 				url: '/images/pages/services/frontend.png',
@@ -43,7 +43,7 @@ const Services = () => {
 			id: 3,
 			title: 'Shopify app development',
 			description: `As a Shopify app developer, I focus on building tailored, efficient apps to enhance online stores. With expertise in web technologies and Shopify's APIs, I create seamless apps that optimize functionality and user experience. Services include app customization, integration with Shopify stores, performance optimization, and adherence to SEO best practices. Let's elevate your Shopify store's capabilities with a customized app that suits your unique needs and boosts business productivity.`,
-			linkToService: '/images/pages/services/shopifyApp.png',
+			linkToService: '/projects?tag=shopifyAppDevelopment',
 			backgroundColor: '#243c36',
 			image: {
 				url: '/images/pages/services/shopifyApp.png',
