@@ -48,7 +48,7 @@ const ProjectPage: React.FC = () => {
 			<Layout>
 				<main className="container">
 					{/* Can add a loading indicator here but left it to 100vh to stop CLS */}
-					<div className="h-screen flex justify-center items-center">
+					<div className="flex items-center justify-center h-screen">
 						Loading...
 					</div>
 				</main>
@@ -60,7 +60,7 @@ const ProjectPage: React.FC = () => {
 		return (
 			<Layout>
 				<main className="container">
-					<section id="banner" className="flex flex-wrap lg:flex-nowrap border-b">
+					<section id="banner" className="flex flex-wrap border-b lg:flex-nowrap">
 						<div className="w-full lg:w-3/4">
 							<div className="py-5 lg:py-10 lg:pr-10">
 								<h1 className="mb-5 text-4xl lg:text-[80px] lg:leading-[110%]">{project.title}</h1>
@@ -101,10 +101,10 @@ const ProjectPage: React.FC = () => {
 					</section>
 					<section id="about">
 						<div className="flex flex-wrap lg:flex-nowrap">
-							<div className="flex items-center justify-center lg:justify-start w-full lg:w-1/5 lg:border-r border-black xl:w-1/3">
-								<h5 className="uppercase font-Roboto-Mono mb-4 lg:mb-0">About the client</h5>
+							<div className="flex items-center justify-center w-full border-black lg:justify-start lg:w-1/5 lg:border-r xl:w-1/3">
+								<h5 className="mb-4 uppercase font-Roboto-Mono lg:mb-0">About the client</h5>
 							</div>
-							<div className="flex flex-wrap w-full lg:w-4/5 gap-10 border-black xl:w-2/3">
+							<div className="flex flex-wrap w-full gap-10 border-black lg:w-4/5 xl:w-2/3">
 								<div className="flex flex-col items-center w-full gap-5 mx-auto text-center lg:w-3/4">
 									<ContentfulImage image={project.companyLogo && project.companyLogo.fields} />
 									{project.companyDescription && documentToReactComponents(project.companyDescription)}
