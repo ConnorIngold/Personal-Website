@@ -5,9 +5,6 @@ interface Props {
 }
 
 const ContactSection = (props: Props) => {
-	const handleFormSubmit = (formData: FormData) => {
-		// handle form submission here, e.g. send the data to a server
-	}
 
 	return (
 		<div className="flex flex-wrap gap-10 lg:flex-nowrap py-7">
@@ -17,7 +14,9 @@ const ContactSection = (props: Props) => {
 				<p>Let&apos;s get in touch and I&apos;ll create a new website for your business what will bring you more clients</p>
 			</div>
 			<div className="lg:w-1/3">
-				<ContactForm onSubmit={handleFormSubmit} />
+				<ContactForm  />
+				{/* <ContactForm onSubmit={handleFormSubmit} /> */}
+
 			</div>
 		</div>
 	)

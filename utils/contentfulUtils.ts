@@ -13,7 +13,7 @@ enum TagIDOptions {
 }
 
 
-export const fetchProjectData = async (content_type: string, projectID: string | undefined, fetchAllProjects: boolean, tagID: TagIDOptions): Promise<any> => {
+export const fetchProjectData = async (content_type: string, projectID: string | undefined, fetchAllProjects: boolean, tagID?: TagIDOptions): Promise<any> => {
 	console.log("tagID", tagID);
 	
 try {
