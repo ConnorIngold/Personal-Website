@@ -11,19 +11,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-8F35GEZP7K"></script>
-				<script
-				dangerouslySetInnerHTML={{
-					__html: `
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', 'G-8F35GEZP7K', {
-						page_path: window.location.pathname,
-					});
-					`,
-				}}
-				/>
+				<meta name="description" content="Expert web developer specializing in Shopify solutions, crafting dynamic user experiences with Vue.js and React. Let's elevate your online presence." />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Connor Ingold - Web Developer & Shopify Expert" />
+				<meta property="og:description" content="Discover cutting-edge Shopify solutions and bespoke web development services by Connor Ingold. Elevate your online presence with a proven industry expert." />
+				<meta property="og:image" content="http://connoringold.com//_next/image?url=%2Fimages%2FConnor_BG.webp"/>
+				<meta property="og:url" content="http://connoringold.com" />
+
+
 				{isHomePage && <link rel="stylesheet" href="../styles/logo-slider.css" />}
 			</Head>
 			<Component {...pageProps} />

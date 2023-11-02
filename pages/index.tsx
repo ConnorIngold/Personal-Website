@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Script from 'next/script'
 import { useIsScreenSize } from "../hooks/useIsScreenSize";
 import Image from "next/image";
 import Layout from "../components/global/Layout";
@@ -17,6 +18,19 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
+
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-8F35GEZP7K" />
+				<Script id="google-analytics">
+					{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-8F35GEZP7K', {
+						page_path: window.location.pathname,
+					});
+					`}
+				</Script>
+
       <main className="container">
         <UnderConstruction />
         <section className="text-center my-7 lg:my-14">
