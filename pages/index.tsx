@@ -19,13 +19,13 @@ const Home: NextPage = () => {
   return (
     <Layout>
 
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-8F35GEZP7K" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-H6XL2T67QT" />
 				<Script id="google-analytics">
 					{`
 					window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
-					gtag('config', 'G-8F35GEZP7K', {
+					gtag('config', 'G-H6XL2T67QT', {
 						page_path: window.location.pathname,
 					});
 					`}
