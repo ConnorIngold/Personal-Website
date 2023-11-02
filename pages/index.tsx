@@ -33,7 +33,7 @@ const Home: NextPage = () => {
             loading="eager"
             src="/images/Connor_BG.webp"
             blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPcVg8AAfEBN0joyNIAAAAASUVORK5CYII="
-            className="rounded-2xl border border-[#1A1918]"
+            className="rounded-2xl border border-[#1A1918] mx-auto"
 			sizes="(min-width: 1440px) 80vw, (min-width: 768px) 50vw, 40vw"
             width={1280}
             height={720}
