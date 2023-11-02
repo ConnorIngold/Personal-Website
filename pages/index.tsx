@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 					</p>
 				</section>
 				<section id="banner">
-					<Image loading="eager" src="/images/Connor_BG.webp" className="rounded-2xl border border-[#1A1918]" width={1784} height={728} alt="Banner" />
+					<Image loading="eager" src="/images/Connor_BG.webp" className="rounded-2xl border border-[#1A1918]" width={1280} height={720} placeholder='blur' priority alt="Banner" />
 				</section>
 				{isMobile ? <ClientsMobile /> : <Clients />}
 
