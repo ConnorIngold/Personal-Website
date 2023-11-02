@@ -17,9 +17,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta property="og:description" content="Discover cutting-edge Shopify solutions and bespoke web development services by Connor Ingold. Elevate your online presence with a proven industry expert." />
 				<meta property="og:image" content="http://connoringold.com//_next/image?url=%2Fimages%2FConnor_BG.webp"/>
 				<meta property="og:url" content="http://connoringold.com" />
-
-
-				{isHomePage && <link rel="stylesheet" href="../styles/logo-slider.css" />}
 			</Head>
 			<Component {...pageProps} />
 		</>
