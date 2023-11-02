@@ -2,8 +2,6 @@ import Button from '../components/global/Button'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 // types
 import type { ProjectData } from '../types/ProjectData' // Import the ProjectData interface
-// utils
-import { formatDate } from '../utils/formatDate'
 
 interface ServiceData extends ProjectData {
 	// Add your additional properties here

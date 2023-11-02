@@ -11,7 +11,19 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<meta name="robots" content="noindex,nofollow" />
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-8F35GEZP7K"></script>
+				<script
+				dangerouslySetInnerHTML={{
+					__html: `
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-8F35GEZP7K', {
+						page_path: window.location.pathname,
+					});
+					`,
+				}}
+				/>
 				{isHomePage && <link rel="stylesheet" href="../styles/logo-slider.css" />}
 			</Head>
 			<Component {...pageProps} />
