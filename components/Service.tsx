@@ -10,15 +10,13 @@ interface ServiceData extends ProjectData {
 }
 
 
-
 const Service = (props: ServiceData): JSX.Element => {
 	return (
 		// if align is left, then add the class 'flex-row-reverse' to the section
 		<section className={`flex my-5 py-5 gap-10 border-b flex-wrap lg:flex-nowrap ${props.align === 'right' && 'flex-row-reverse'}`}>
-
-			<div className="flex-1 pr-10 border-r">{props.children}</div>
+			<div className="flex-1 lg:pr-10 lg:border-b-0 lg:border-r">{props.children}</div>
 	
-			<div className="flex flex-col justify-center flex-1 gap-5 text-left">
+			<div className="flex flex-col justify-center gap-5 text-left lg:flex-1">
 				<h5>{props.title}</h5>
 				<h3 className="font-normal">{props.name}</h3>
 				<h5>{props.startDate}</h5>
