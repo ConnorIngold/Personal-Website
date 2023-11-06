@@ -28,10 +28,8 @@ const MyProjects = () => {
 		
 		const fetchProject = async () => {
 			const projectsData: ProjectData[] = await fetchProjectData('project', undefined, true, tag as TagIDOptions)
-			console.log(projectsData)
 
 			setProjects(projectsData)
-			console.log("projects", projects);
 			
 			setLoading(false)
 		}

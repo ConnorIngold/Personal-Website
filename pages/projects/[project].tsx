@@ -20,7 +20,6 @@ const ProjectPage: React.FC = () => {
 	const [project, setProject] = useState<ProjectData | null>(null)
 
 	useEffect(() => {
-		console.log("projectID", projectID);
 		
 		const fetchProject = async () => {
 				if (!projectID) {
@@ -30,7 +29,6 @@ const ProjectPage: React.FC = () => {
 			setProject(null)
 			try {
 				const projectData: ProjectData = await fetchProjectData('project', projectID, false)
-				console.log("🚀 ~ file: [project].tsx:25 ~ fetchProject ~ projectData:", projectData)
 				setProject(projectData)
 				setLoading(false)
 				

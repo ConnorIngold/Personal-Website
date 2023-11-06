@@ -50,8 +50,6 @@ const ContactForm: React.FC = () => {
 			message: event.currentTarget.message.value,
 		}
 
-		console.log("eventFormData", eventFormData);
-
 		if (!eventFormData.name || !eventFormData.email || !eventFormData.message) {
 			return
 		}
@@ -70,7 +68,6 @@ const ContactForm: React.FC = () => {
 			return response.json();
 		})
 		.then(data => {
-			console.log('Success:', data)
 			setIsLoading(false)
 			setSuccess(data.message)
 		})

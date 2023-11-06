@@ -40,11 +40,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     };
 
     try {
+      console.log("🚀 ~ file: contact.ts:44 ~ handler ~ transporter:", transporter)
       await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: 'Something went wrong.' });
+      res.status(500).json({ message: 'Something went wrong.', error });
     }
   } else {
     res.status(405).json({ message: 'Method not allowed' });

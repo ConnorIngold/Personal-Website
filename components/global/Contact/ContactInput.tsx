@@ -22,9 +22,7 @@ const ContactInput = ({ id, label, type }: Props) => {
 	}
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		
 		setInputValue(e.target.value);
-		console.log("e.target.value", isFocused);
     }
 
 	return (
