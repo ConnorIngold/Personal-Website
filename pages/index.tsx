@@ -30,8 +30,24 @@ const Home: NextPage = () => {
 					});
 					`}
 				</Script>
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5G2HWR37');
+            `,
+          }}
+        />
+
 
       <main className="container">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G2HWR37"
+        height="0" width="0" style={{display:'none', visibility:'hidden'}}></iframe></noscript>
         <UnderConstruction />
         <section className="text-center my-7 lg:my-14">
           <h1 className="text-black mb-7 text-title">

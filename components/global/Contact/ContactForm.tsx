@@ -70,6 +70,11 @@ const ContactForm: React.FC = () => {
 		.then(data => {
 			setIsLoading(false)
 			setSuccess(data.message)
+			    // Push an event to GTM's dataLayer
+				window.dataLayer.push({
+					event: 'successful_form_submission',
+					// Include any additional parameters you want to send to GA4
+				  });
 		})
 		.catch(error => {
 			// Handle the error response
