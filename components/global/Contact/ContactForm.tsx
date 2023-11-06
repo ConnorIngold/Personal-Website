@@ -73,6 +73,11 @@ const ContactForm: React.FC = () => {
 			    // Push an event to GTM's dataLayer
 				window.dataLayer.push({
 					event: 'successful_form_submission',
+					'formData': {
+						'name': eventFormData.name, // Example form field
+						'email': eventFormData.email // Example form field
+						// Add other form fields as necessary
+					  }
 					// Include any additional parameters you want to send to GA4
 				  });
 		})
