@@ -16,16 +16,6 @@ const query = `
     }
 `;
 
-
-export interface ProjectCollection {
-	items: Item[];
-}
-
-export interface Item {
-	name: string;
-}
-
-
 const posts = async (req: NextApiRequest, res: NextApiResponse) => {
   // make a request to contentful
   try {

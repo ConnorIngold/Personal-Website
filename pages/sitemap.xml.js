@@ -1,4 +1,4 @@
-const EXTERNAL_DATA_URL = process.env.env === 'production' ? 'https://connoringold.com/api/posts' : 'http://localhost:3002/api/posts';
+const EXTERNAL_DATA_URL = 'https://connoringold.com/api/posts'
 
 
 function generateSiteMap (posts) {
