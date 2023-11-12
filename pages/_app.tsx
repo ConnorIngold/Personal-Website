@@ -11,7 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
+			<title>Connor Ingold - Web Developer & Shopify Expert</title>
+
 				<meta name="description" content="Expert web developer specializing in Shopify solutions, crafting dynamic user experiences with Vue.js and React. Let's elevate your online presence." />
+				<link rel="canonical" href={`http://connoringold.com${router.asPath}`} />
+				<meta name="robots" content="index, follow" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="Connor Ingold - Web Developer & Shopify Expert" />
 				<meta property="og:description" content="Discover cutting-edge Shopify solutions and bespoke web development services by Connor Ingold. Elevate your online presence with a proven industry expert." />
