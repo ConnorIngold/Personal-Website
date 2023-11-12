@@ -19,6 +19,10 @@ const nextConfig = {
 		config: './tailwind.config.js',
 		safelist: ['bg-Vue', 'bg-React'], // Add any classes that should not be purged here
 	},
+	i18n: {
+		locales: ["en"],
+		defaultLocale: "en",
+	},
 }
 
 module.exports = nextConfig
