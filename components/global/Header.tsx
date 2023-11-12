@@ -66,6 +66,7 @@ const Header = () => {
 							<Link
 								href="https://www.linkedin.com/in/connor-ingold-a39a27100/"
 								className="flex items-center justify-center p-1 mx-2 text-center border border-black rounded-full border-black hover:border-[#baa086] group h-7 w-7"
+								aria-label='LinkedIn'
 							>
 								<svg className="w-full" width="14" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -78,6 +79,7 @@ const Header = () => {
 							<Link
 								href="https://github.com/ConnorIngold"
 								className="flex items-center justify-center p-1 mx-2 text-xs border border-black rounded-full hover:border-[#baa086] group h-7 w-7 full"
+								aria-label='Github'
 							>
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
