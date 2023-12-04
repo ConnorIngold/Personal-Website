@@ -24,7 +24,7 @@ function generateSiteMap (posts) {
       .map(({ name }) => {
         return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${name}`}</loc>
+           <loc>${`projects/${name}`}</loc>
        </url>
      `;
       })
