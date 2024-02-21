@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,CSSProperties } from 'react'
 import { useRouter } from 'next/router'
 import Layout from '../../components/global/Layout'
 import ErrorPage from '../../components/pages/404/ErrorPage'
@@ -55,6 +55,13 @@ const ProjectPage: React.FC = () => {
 	}
 
 	if (project) {
+
+		const styles = {
+			blueBG: {
+				background:"#001535"
+			}
+		};
+
 		return (
 			<Layout>
 				<main className="container">
@@ -97,6 +104,7 @@ const ProjectPage: React.FC = () => {
 							</div>
 						</a>
 					</section>
+
 					<section id="about">
 						<div className="flex flex-wrap lg:flex-nowrap">
 							<div className="flex items-center justify-center w-full border-black lg:justify-start lg:w-1/5 lg:border-r xl:w-1/3">
@@ -104,7 +112,9 @@ const ProjectPage: React.FC = () => {
 							</div>
 							<div className="flex flex-wrap w-full gap-10 border-black lg:w-4/5 xl:w-2/3">
 								<div className="flex flex-col items-center w-full gap-5 mx-auto text-center lg:w-3/4">
-									<ContentfulImage image={project.companyLogo && project.companyLogo.fields} />
+									<div style={project.name === 'vytronix' ? styles.blueBG as CSSProperties : undefined}>
+										<ContentfulImage image={project.companyLogo && project.companyLogo.fields} />
+									</div>
 									{project.companyDescription && documentToReactComponents(project.companyDescription)}
 								</div>
 							</div>
