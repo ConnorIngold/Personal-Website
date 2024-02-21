@@ -19,7 +19,6 @@ const ProjectImgCard: React.FC<ProjectImgCardProps> = (props) => {
       href={props.link}
       className="flex flex-col items-center justify-center flex-1 gap-3"
     >
-      hi  
       <div
         style={{ background: `${props.backgroundColor}` }}
         className={`flex flex-col items-center justify-center gap-5 w-full rounded-xl`}
