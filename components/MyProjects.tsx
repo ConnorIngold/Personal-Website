@@ -12,7 +12,7 @@ const MyProjects = () => {
 					been involved in:
 				</p>
 			</div>
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:grid-cols-2 my-7 lg:my-14">
+			<div className="grid grid-cols-1 gap-5 lg:grid-cols-2 sm:grid-cols-2 my-7 lg:my-14">
 				{projects.map((project, index) => (
 					<ProjectCard
 						key={project.id}

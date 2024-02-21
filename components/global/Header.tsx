@@ -54,7 +54,7 @@ const Header = () => {
 						<ul className="flex">
 							{links.map(link => (
 								<li key={link.path}>
-									<Link href={link.path} className={`list-none px-2 text-[64px] lg:text-[18px] transition-all ease  uppercase ${currentPath === link.path && 'text-gold'}`}>
+									<Link href={link.path} className={`list-none px-2 text-[64px] lg:text-[18px] transition-all duration-300 ease pb-1 uppercase ${currentPath === link.path && 'text-gold'}`}>
 										{link.label}
 										<span className="slider"></span>
 									</Link>

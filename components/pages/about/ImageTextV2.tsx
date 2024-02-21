@@ -13,7 +13,9 @@ const ImageTextV2 = () => {
 					<h4 className="mb-3">Top Shopify Agency Member</h4>
 					<p className="text-center md:text-left">
 						This success paved the way for me to join the workforce as a full-time web developer. I have since worked for a digital marketing agency in Milton Keynes where I first
-						picked up Shopify and honed my skills. After nearly 2 years, I moved on to work for one of the top Shopify development agencies in London.
+						picked up Shopify and honed my skills. After nearly 2 years, I moved on to work for one of the top Shopify development agencies in London, where I was able to work on a 
+						variety of projects for clients such as <a className='underline' href="https://theframebezel.com">Samsung bezel,</a> <a className='underline' href="https://bbcicecream.eu/">Billionaire Boys club,</a> and many more. My time at this agency allowed me to develop a deep
+						understanding of the Shopify platform and the ability to work on complex projects which then allowed to secure a new position at a top Shopify agency based Cambridge know as <a className='underline' href="https://www.byassociationonly.com/">By association only</a> which is where I currently maintain as senior developer role.
 					</p>
 				</div>
 				<div className="my-5 border-b lg:my-10"></div>
