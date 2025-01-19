@@ -5,7 +5,7 @@ export const projects = [
     title: "Roomix",
     company_description:
       "Roomix is a platform offering DIY project kits for easy home interior upgrades. They provide materials, instructions, and support for personalized design transformations.",
-    projectURL: "https://www.roomixdiy.com/pages/shelf-builder",
+    projectURL: "https://www.roomix.com",
     projectDescription: "",
     url: "/images/clients/roomix/roomixEdit.webp",
     alt: "project",
